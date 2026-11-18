@@ -1,0 +1,46 @@
+{
+  "has_precipitation": false,
+  "temperature": 0.5,
+  "temperature_modifier": "none",
+  "downfall": 0.0,
+  "effects": {
+    "fog_color": 15107435,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "sky_color": 9197964,
+    "foliage_color": 8174955,
+    "grass_color": 8174955
+  },
+  "spawners": {
+    "monster": [],
+    "creature": [],
+    "ambient": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "underground_water_creature": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": []
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "archivist:childhoodhome_grass",
+      "archivist:childhoodhome_tall_grass",
+      "archivist:childhoodhome_flowers"
+    ],
+    [],
+    [
+      "minecraft:trees_plains"
+    ]
+  ],
+  "creature_spawn_probability": 0.0
+}

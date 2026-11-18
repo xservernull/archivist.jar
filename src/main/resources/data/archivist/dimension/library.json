@@ -1,0 +1,11 @@
+{
+  "type": "archivist:library",
+  "generator": {
+    "type": "archivist:realm",
+    "kind": "library",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraft:plains"
+    }
+  }
+}

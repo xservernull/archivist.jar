@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "render_type": "minecraft:cutout_mipped",
+  "textures": {
+    "end": "archivist:block/leaves_top_4k2",
+    "side": "archivist:block/leaves_side_4k2"
+  }
+}

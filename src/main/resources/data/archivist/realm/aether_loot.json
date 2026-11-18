@@ -1,0 +1,203 @@
+{
+  "_comment": "Items of the aether's buildings, from the old structure files (aether_castle, aethertemple, aethertower), slot for slot. pos = the container's position relative to its building's lowest corner. Read by dimensions.AetherLoot when a chunk of archivist:aether is generated for the first time. Containers the old files left empty are not listed. Books: title, author, pages (plain text, or 'archivist.key|english' to translate a page; the title is a plain string and cannot be).",
+  "castle": [
+    {
+      "pos": [
+        38,
+        3,
+        26
+      ],
+      "items": [
+        {
+          "slot": 3,
+          "id": "minecraft:golden_carrot"
+        },
+        {
+          "slot": 4,
+          "id": "minecraft:golden_carrot"
+        },
+        {
+          "slot": 5,
+          "id": "minecraft:golden_carrot"
+        },
+        {
+          "slot": 12,
+          "id": "minecraft:golden_carrot"
+        },
+        {
+          "slot": 13,
+          "id": "minecraft:totem_of_undying"
+        },
+        {
+          "slot": 14,
+          "id": "minecraft:golden_carrot"
+        },
+        {
+          "slot": 17,
+          "id": "minecraft:written_book",
+          "title": "?",
+          "author": "Erni_01",
+          "pages": [
+            "   \n\n\n\"Pipe Clip Lives.\"\n\n\n\n\n\n\n\nErni(?"
+          ]
+        },
+        {
+          "slot": 21,
+          "id": "minecraft:golden_carrot"
+        },
+        {
+          "slot": 22,
+          "id": "minecraft:golden_carrot"
+        },
+        {
+          "slot": 23,
+          "id": "minecraft:golden_carrot"
+        }
+      ]
+    }
+  ],
+  "aethertemple": [
+    {
+      "pos": [
+        17,
+        7,
+        18
+      ],
+      "items": [
+        {
+          "slot": 2,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 3,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 4,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 5,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 11,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 12,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 14,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 15,
+          "id": "minecraft:water_bucket"
+        },
+        {
+          "slot": 20,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 21,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 22,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 23,
+          "id": "archivist:aetherportalstone"
+        }
+      ]
+    },
+    {
+      "pos": [
+        17,
+        7,
+        19
+      ],
+      "items": [
+        {
+          "slot": 2,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 10,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 11,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 12,
+          "id": "archivist:aetherportalstone"
+        },
+        {
+          "slot": 13,
+          "id": "archivist:aetherportalstone"
+        }
+      ]
+    }
+  ],
+  "aethertower": [
+    {
+      "pos": [
+        18,
+        13,
+        18
+      ],
+      "items": [
+        {
+          "slot": 3,
+          "id": "minecraft:cooked_beef"
+        },
+        {
+          "slot": 4,
+          "id": "minecraft:cooked_beef"
+        },
+        {
+          "slot": 5,
+          "id": "minecraft:cooked_beef"
+        },
+        {
+          "slot": 12,
+          "id": "minecraft:cooked_beef"
+        },
+        {
+          "slot": 13,
+          "id": "minecraft:golden_apple"
+        },
+        {
+          "slot": 14,
+          "id": "minecraft:cooked_beef"
+        },
+        {
+          "slot": 17,
+          "id": "minecraft:written_book",
+          "title": "read",
+          "author": "Erni_01",
+          "pages": [
+            "archivist.aether.book.2|woah.. u found a secret very smart of you exploring all of this structures, enjoy your reward!\n\n\nErni_01 ♡"
+          ]
+        },
+        {
+          "slot": 21,
+          "id": "minecraft:cooked_beef"
+        },
+        {
+          "slot": 22,
+          "id": "minecraft:cooked_beef"
+        },
+        {
+          "slot": 23,
+          "id": "minecraft:cooked_beef"
+        }
+      ]
+    }
+  ]
+}

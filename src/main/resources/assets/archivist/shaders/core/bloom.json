@@ -1,0 +1,12 @@
+{
+  "vertex": "archivist:bloom",
+  "fragment": "archivist:bloom",
+  "samplers": [
+    { "name": "DiffuseSampler" },
+    { "name": "DepthSampler" }
+  ],
+  "uniforms": [
+    { "name": "BlurStep", "type": "float", "count": 2, "values": [0.0, 0.0] },
+    { "name": "Threshold", "type": "float", "count": 2, "values": [0.8, 0.25] }
+  ]
+}

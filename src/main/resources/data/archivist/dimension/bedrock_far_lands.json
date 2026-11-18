@@ -1,0 +1,11 @@
+{
+  "type": "archivist:far_lands",
+  "generator": {
+    "type": "archivist:realm",
+    "kind": "bedrock_far_lands",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "archivist:bedrock_far_lands"
+    }
+  }
+}

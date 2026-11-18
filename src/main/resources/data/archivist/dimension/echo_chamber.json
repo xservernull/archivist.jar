@@ -1,0 +1,11 @@
+{
+  "type": "archivist:echo_chamber",
+  "generator": {
+    "type": "archivist:realm",
+    "kind": "echo_chamber",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "archivist:echo_chamber"
+    }
+  }
+}

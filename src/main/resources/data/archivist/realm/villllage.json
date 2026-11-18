@@ -1,0 +1,197 @@
+{
+  "_comment": "Villllage structures. Footprint comes from the NBT itself and must fit in 30x30 (VillageGrid.USABLE). y = offset from the first free block above the ground (negative = sunk). weight = chance relative to the others. builtin = tree shapes made in code (Prefab). Files: data/archivist/structure/NAME.nbt. Not included on purpose: real_glowstone_portal (was never in the old weighted list).",
+  "structures": [
+    {
+      "name": "herreria",
+      "weight": 4,
+      "y": -3
+    },
+    {
+      "name": "pozoviejo",
+      "weight": 4,
+      "y": -1
+    },
+    {
+      "name": "oldversionhouse1",
+      "weight": 4,
+      "y": -2
+    },
+    {
+      "name": "oldversionhouse2",
+      "weight": 4,
+      "y": -2
+    },
+    {
+      "name": "4kb_dirt_cube",
+      "weight": 4
+    },
+    {
+      "name": "4kb_grass_cube",
+      "weight": 4
+    },
+    {
+      "name": "4kb_leaves_cube",
+      "weight": 4
+    },
+    {
+      "name": "4kb_log_cube",
+      "weight": 4
+    },
+    {
+      "name": "4kb_stone_cube",
+      "weight": 4
+    },
+    {
+      "name": "XOR_hole_1",
+      "weight": 4,
+      "y": -4
+    },
+    {
+      "name": "abandoned_house_of_dog",
+      "weight": 4,
+      "y": -2
+    },
+    {
+      "name": "abandoned_village_house",
+      "weight": 4,
+      "y": -2
+    },
+    {
+      "name": "badly_reconstructed_small_village_house",
+      "weight": 4,
+      "y": -2
+    },
+    {
+      "name": "big_village_house",
+      "weight": 4,
+      "y": -1
+    },
+    {
+      "name": "cobblestone_cube",
+      "weight": 4,
+      "y": -2
+    },
+    {
+      "name": "dangerous_fake_bedrock_cube",
+      "weight": 4
+    },
+    {
+      "name": "dangerous_fake_lava_cube",
+      "weight": 4
+    },
+    {
+      "name": "dangerous_fake_wood_cube",
+      "weight": 4
+    },
+    {
+      "name": "fake_glowstone_portal",
+      "weight": 4
+    },
+    {
+      "name": "geometry_coal_ore_cube",
+      "weight": 4
+    },
+    {
+      "name": "geometry_glass_cube_small",
+      "weight": 4
+    },
+    {
+      "name": "geometry_iron_ore_cube",
+      "weight": 4
+    },
+    {
+      "name": "netherrack_cube",
+      "weight": 4
+    },
+    {
+      "name": "old_brick_cube",
+      "weight": 4
+    },
+    {
+      "name": "old_cool_blacksmith",
+      "weight": 4
+    },
+    {
+      "name": "short_cobblestone_pillar",
+      "weight": 4
+    },
+    {
+      "name": "short_dirt_pillar",
+      "weight": 4
+    },
+    {
+      "name": "short_wooden_pillar",
+      "weight": 4
+    },
+    {
+      "name": "star_of_hope",
+      "weight": 1,
+      "y": -1
+    },
+    {
+      "name": "tall_cobblestone_pillar",
+      "weight": 4
+    },
+    {
+      "name": "tall_dirt_pillar",
+      "weight": 4
+    },
+    {
+      "name": "tall_wooden_pillar",
+      "weight": 4
+    },
+    {
+      "name": "the_room_where_it_happened",
+      "weight": 4
+    },
+    {
+      "name": "toast_enchanting_library",
+      "weight": 4
+    },
+    {
+      "name": "village_house",
+      "weight": 4,
+      "y": -2
+    },
+    {
+      "name": "xor_cube_2",
+      "weight": 4
+    },
+    {
+      "name": "fenceway",
+      "weight": 1
+    },
+    {
+      "name": "geometry_glass_cube_huge",
+      "weight": 1
+    },
+    {
+      "name": "metaphor_player_statue",
+      "weight": 1
+    },
+    {
+      "name": "villlage_tower",
+      "weight": 1
+    },
+    {
+      "builtin": "oak_tree",
+      "weight": 2
+    },
+    {
+      "builtin": "spruce_tree",
+      "weight": 2
+    }
+  ],
+  "lamps": [
+    {
+      "name": "coda_lamppost"
+    },
+    {
+      "name": "dark_lamppost"
+    },
+    {
+      "name": "the_new_cooler_lamppost",
+      "y": -1
+    }
+  ]
+}

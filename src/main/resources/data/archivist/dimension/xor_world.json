@@ -1,0 +1,11 @@
+{
+  "type": "archivist:xor_world",
+  "generator": {
+    "type": "archivist:realm",
+    "kind": "xor_world",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraft:the_void"
+    }
+  }
+}

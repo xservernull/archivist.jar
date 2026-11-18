@@ -1,0 +1,11 @@
+{
+  "type": "archivist:childhoodhome",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "archivist:childhoodhome_biome"
+    },
+    "settings": "archivist:childhoodhome_settings"
+  }
+}

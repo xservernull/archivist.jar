@@ -1,0 +1,31 @@
+check inside jar:
+& "C:\Program Files\Java\jdk-21\bin\jar" tf adminpanel.jar
+
+
+ownerterm
+javac --release 17 OwnerTerminal.java
+& "C:\Program Files\Java\jdk-21\bin\jar" cfe OwnerTerminal.jar OwnerTerminal OwnerTerminal*.class youmadeamistake.mp3 ascii-art.txt
+
+
+javac --release 17 AdminPanel.java
+javac --release 17 FriendPopup.java
+& "C:\Program Files\Java\jdk-21\bin\jar" cfe adminpanel.jar AdminPanel AdminPanel*.class
+& "C:\Program Files\Java\jdk-21\bin\jar" cfe FriendPopup.jar FriendPopup FriendPopup*.class textures/
+
+alternatives:
+& "C:\Program Files\Java\jdk-21\bin\jar" cfe adminpanel.jar AdminPanel AdminPanel.class "AdminPanel$TermPanel.class"
+& "C:\Program Files\Java\jdk-21\bin\jar" cfe adminpanel.jar AdminPanel AdminPanel.class 'AdminPanel$TermPanel.class'
+
+nothing to do but uh threaddump:
+Get-Process java | Select-Object Id
+& "C:\Program Files\Java\jdk-21\bin\jstack.exe" -l <pid> > C:\Users\olawe\Downloads\threaddump.txt
+
+freeze_test:
+& "C:\Program Files\Java\jdk-21\bin\jstack.exe" <PID> > freeze_dump.txt
+
+delete comments n blank lines:
+(/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/|[ \t]*//.*)
+^\s*\n
+
+& "C:\Program Files\Java\jdk-21\bin\jstack.exe" -l 17056 > C:\Users\olawe\Downloads\threaddump.txt
+& "C:\Program Files\Java\jdk-21\bin\jstack.exe" 17056 > freeze_dump.txt

@@ -1,0 +1,11 @@
+{
+  "type": "archivist:villllage",
+  "generator": {
+    "type": "archivist:realm",
+    "kind": "villllage",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "archivist:villllage_plains"
+    }
+  }
+}

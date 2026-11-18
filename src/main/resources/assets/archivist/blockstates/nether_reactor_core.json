@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "done=false,layer=1": {
+      "model": "archivist:block/nether_reactor_core_block"
+    },
+    "done=true,layer=1": {
+      "model": "archivist:block/nether_reactor_core_finished"
+    },
+    "done=false,layer=2": {
+      "model": "archivist:block/nether_reactor_core_initialized"
+    },
+    "done=true,layer=2": {
+      "model": "archivist:block/nether_reactor_core_finished"
+    },
+    "done=false,layer=3": {
+      "model": "archivist:block/nether_reactor_core_initialized"
+    },
+    "done=true,layer=3": {
+      "model": "archivist:block/nether_reactor_core_finished"
+    }
+  }
+}

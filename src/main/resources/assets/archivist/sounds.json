@@ -1,0 +1,684 @@
+{
+  "funnyaudio": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:funnyaudio"
+    ]
+  },
+  "intermission": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:intermission"
+    ]
+  },
+  "alarm": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:alarm"
+    ]
+  },
+  "chasemusic1": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:chasemusic1"
+    ]
+  },
+  "chasemusic2": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:chasemusic2"
+    ]
+  },
+  "breathing": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:breathing"
+    ]
+  },
+  "footsteps": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:footsteps"
+    ]
+  },
+  "near": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:near"
+    ]
+  },
+  "heartbeat": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:heartbeat"
+    ]
+  },
+  "die": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:die"
+    ]
+  },
+  "scream1": {
+    "category": "hostile",
+    "sounds": [
+      "archivist:scream1"
+    ]
+  },
+  "glitch": {
+    "category": "hostile",
+    "sounds": [
+      "archivist:glitch"
+    ]
+  },
+  "archiving": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:archiving",
+        "stream": true
+      }
+    ]
+  },
+  "brokenrocks": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:brokenrocks",
+        "stream": true
+      }
+    ]
+  },
+  "darkfog": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:darkfog",
+        "stream": true
+      }
+    ]
+  },
+  "echowithoutechofuckaudacity": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:echowithoutechofuckaudacity",
+        "stream": true
+      }
+    ]
+  },
+  "v1": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:v1",
+        "stream": true
+      }
+    ]
+  },
+  "v2": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:v2",
+        "stream": true
+      }
+    ]
+  },
+  "villagetheme": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:villagetheme",
+        "stream": true
+      }
+    ]
+  },
+  "welcometohell": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:welcometohell",
+        "stream": true
+      }
+    ]
+  },
+  "weusedtoplaythistogether": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:weusedtoplaythistogether",
+        "stream": true
+      }
+    ]
+  },
+  "yourememberthisplace": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:yourememberthisplace",
+        "stream": true
+      }
+    ]
+  },
+  "terminal": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:terminal",
+        "stream": true
+      }
+    ]
+  },
+  "aweirdplace": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:aweirdplace"
+    ]
+  },
+  "heaven": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:heaven"
+    ]
+  },
+  "menu2": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:menu2",
+        "stream": true
+      }
+    ]
+  },
+  "hello": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "archivist:hello",
+        "stream": true
+      }
+    ]
+  },
+  "necksnap": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "archivist:necksnap",
+        "stream": false
+      }
+    ]
+  },
+  "friendsound": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "archivist:friendsound",
+        "stream": false
+      }
+    ]
+  },
+  "tinastep": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:tinastep"
+    ]
+  },
+  "tinaambient": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:tinaambient"
+    ]
+  },
+  "byetina": {
+    "category": "ambient",
+    "sounds": [
+      "archivist:byetina"
+    ]
+  },
+  "dinnerbone/ambient": {
+    "category": "hostile",
+    "sounds": [
+      "archivist:dinnerbone/ambient"
+    ]
+  },
+  "dinnerbone/hurt": {
+    "category": "hostile",
+    "sounds": [
+      "archivist:dinnerbone/hurt"
+    ]
+  },
+  "dinnerbone/death": {
+    "category": "hostile",
+    "sounds": [
+      "archivist:dinnerbone/death"
+    ]
+  },
+  "dinnerbone/neigh": {
+    "category": "hostile",
+    "sounds": [
+      "archivist:dinnerbone/neigh"
+    ]
+  },
+  "dinnerbone/hoofstep": {
+    "category": "hostile",
+    "sounds": [
+      "archivist:dinnerbone/hoofstep"
+    ]
+  },
+  "shoto": {
+    "sounds": [
+      "archivist:shoto"
+    ]
+  },
+  "video/video_shadow": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "archivist:video/video_shadow",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "video/video_smaller": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "archivist:video/video_smaller",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "video/video_hurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "archivist:video/video_hurt",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "video/video_fantasy": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "archivist:video/video_fantasy",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "video/video_identity": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "archivist:video/video_identity",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "video/video_lost": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "archivist:video/video_lost",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "video/video_name": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "archivist:video/video_name",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "video/video_final": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "archivist:video/video_final",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/block_1": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/block_1",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/block_2": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/block_2",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/block_3": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/block_3",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/block_4": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/block_4",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/block_5": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/block_5",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/block_6": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/block_6",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/block_7": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/block_7",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/block_8": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/block_8",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/block_9": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/block_9",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_name_1": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_name_1",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_name_2": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_name_2",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_name_3": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_name_3",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_shadow_1": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_shadow_1",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_shadow_2": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_shadow_2",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_shadow_3": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_shadow_3",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_smaller_1": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_smaller_1",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_smaller_2": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_smaller_2",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_smaller_3": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_smaller_3",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_hurt_1": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_hurt_1",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_hurt_2": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_hurt_2",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_hurt_3": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_hurt_3",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_fantasy_1": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_fantasy_1",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_fantasy_2": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_fantasy_2",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_fantasy_3": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_fantasy_3",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_identity_1": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_identity_1",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_identity_2": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_identity_2",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_identity_3": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_identity_3",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_lost_1": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_lost_1",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_lost_2": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_lost_2",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_lost_3": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_lost_3",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_final_builder": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_final_builder",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_final_mosaic": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_final_mosaic",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  },
+  "voiceacting/resp_final_player": {
+    "category": "voice",
+    "sounds": [
+      {
+        "name": "archivist:voiceacting/resp_final_player",
+        "stream": true,
+        "volume": 4.0
+      }
+    ]
+  }
+}

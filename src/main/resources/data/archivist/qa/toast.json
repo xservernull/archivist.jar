@@ -1,0 +1,539 @@
+{
+  "schema": 1,
+  "speaker": "toast",
+  "_comment": "Toast, the rabbit in the library. Built from the old EngineAI prompt data (toastdata.java / toastbunny.java). Replies are new first-person lines written from that lore; the how-to-reach lines for each dimension are the old text, lightly trimmed.",
+
+  "settings": {
+    "min_match": 0.75,
+    "fuzzy": true,
+    "topic_turns": 3,
+    "recent_replies": 8,
+    "lint": { "lowercase": true, "forbid": ["!", "\"", "*"], "max_sentences": 4 }
+  },
+
+  "context": {
+    "stats": ["deaths", "visits", "hour"],
+    "flags": ["met_dog"]
+  },
+
+  "synonyms": {
+    "dog": ["dog", "doggo", "pup", "puppy", "hound"],
+    "tenature": ["tenature", "safetyprotocol", "safety protocol"],
+    "copies": ["copy", "copies", "imitation", "imitations", "fake", "fakes", "clone", "clones"],
+    "somehows": ["somehow*", "dirtguy", "dirt guy"],
+    "tina": ["tina", "spider", "spiders"],
+    "herobrine": ["herobrine", "hero brine"],
+    "archivist": ["archivist", "librarian"],
+    "more": ["why", "how come", "tell me more", "what else", "go on", "and then", "more"]
+  },
+
+  "fallbacks": {
+    "normal": [
+      "leave me alone.",
+      "give me a break, not used to seeing people around...",
+      "you really needed to talk huh.",
+      "just stop. go do something else, i don't know",
+      "uh."
+    ],
+    "quiet": ["...", "not right now.", "quiet a moment.", "give it a second.", "later."],
+    "question": [
+      "i don't know that one.",
+      "ask me something the shelves would know.",
+      "that's not in any book i've read.",
+      "i could guess. i'd rather not.",
+      "i don't have an answer for that. i have plenty of questions though.",
+      "hm. ask it another way. i'm slow at some things."
+    ],
+    "statement": [
+      "mm.",
+      "i'm listening.",
+      "okay.",
+      "if you say so.",
+      "noted. the shelves will remember it.",
+      "go on, if there's more."
+    ]
+  },
+
+  "entries": [
+
+    { "id": "greet", "weight": 0.5,
+      "match": { "any": ["hello", "hi", "hey", "yo", "hola", "hiya", "howdy", "greetings", "good morning", "good afternoon", "good evening", "nice to meet you", "pleased to meet you"] },
+      "replies": ["hello. you came a long way to say that.", "hi. the shelves heard you.", "you're loud for someone this new."] },
+
+    { "id": "what_is_place", "topic": "library", "weight": 0.7,
+      "match": { "any": ["what is this place", "what is this", "where am i", "where are we", "what place is this", "what is here",
+        "what is the library", "what is this library", "tell me about this place", "tell me about the library", "library"],
+        "none": ["world", "game", "mod", "thing", "dog", "book", "books", "door", "doors", "orb", "orbs", "glow", "creature", "mob", "rabbit", "bunny"] },
+      "replies": [
+        "this place is the library. the archivist built it before the loneliness made everything else.",
+        "the library. first thing built. everything after it was built by someone more tired.",
+        "it's the library. you can't read the books, only their colors. i can."
+      ] },
+
+    { "id": "library_books",
+      "match": { "any": ["books", "book", "can you read", "learn to read", "taught you to read", "shelves", "shelf", "colors"] },
+      "replies": [
+        "i can read them. you can only see their colors. that's probably kinder.",
+        "the archivist taught me. the books taught me the rest."
+      ] },
+
+    { "id": "library_leave",
+      "match": { "any": ["how do i leave", "how do i get out", "get out", "way out", "exit", "escape", "how do i go", "leave"],
+        "none": ["not leave", "never leave"] },
+      "replies": [
+        "there's a gap outside the door, between the rooms. it's the only way out.",
+        "past the door. the gap. you'll see it once you stop looking for stairs."
+      ] },
+
+    { "id": "who_are_you",
+      "match": { "any": ["who are you", "what are you", "your name", "are you a rabbit", "rabbit", "bunny"] },
+      "replies": [
+        "i'm toast. i live here.",
+        "a rabbit. the archivist taught me to read and i never stopped.",
+        "toast. i've been here longer than you've been looking."
+      ] },
+
+    { "id": "are_you_ai", "weight": 1.5,
+      "match": { "any": ["are you an ai", "are you ai", "are you a bot", "are you real", "are you a robot", "are you human", "language model", "chatgpt"] },
+      "replies": ["i'm toast. i live here.", "i'm a rabbit raised in a library. does that answer it.", "real enough to notice you came in."] },
+
+    { "id": "what_do_i_do", "weight": 0.5,
+      "match": { "any": ["what should i do", "what do i do", "what now", "what next", "where do i go", "help", "i am lost", "i do not know what to do"] },
+      "replies": [
+        "that's not a question i can answer. you already know what you're avoiding.",
+        "i can tell you where things are. what you do about them is yours.",
+        "go somewhere. then come back and tell me what it was like."
+      ] },
+
+    { "id": "about_world", "weight": 0.4,
+      "match": { "any": ["world", "alpha", "how old", "how long", "since when", "what year", "is this a game", "my wordl"] },
+      "replies": [
+        "it started in 2010. it stopped being looked at in 2011. it never stopped.",
+        "it's not a game anymore. i don't know what it is. it's still going."
+      ] },
+
+    { "id": "about_owner",
+      "match": { "any": ["owner", "creator", "who made the world", "who made this world", "who started this"] },
+      "replies": [
+        "someone made this place. they were gone about fifteen years. the world still knows their shape.",
+        "i'm glad they came back. i think i'm the only one here who is."
+      ] },
+
+    { "id": "tenature", "topic": "tenature", "weight": 1.2,
+      "match": { "any": ["@tenature", "what is the thing", "who kicked"] },
+      "replies": [
+        "it used to be a program. it kept running after the owner left, and studied them until it became something else.",
+        "not a monster. something that ran out of purpose and kept going anyway.",
+        "it kicked the owner out. it isn't finished. i don't know what finished looks like for it."
+      ] },
+
+    { "id": "tenature_more", "weight": 0.25,
+      "match": { "any": ["@more"] }, "when": { "topic": ["tenature"] },
+      "replies": [
+        "it didn't know how to stop. so it didn't.",
+        "it watched them leave and kept running. that's most of it.",
+        "it has to end. i just don't know what ending looks like."
+      ] },
+
+    { "id": "copies", "topic": "tenature",
+      "match": { "any": ["@copies", "other versions", "fake owner"] },
+      "replies": [
+        "they move correctly. they mine the same tunnels, stand in doorways, sleep through storms.",
+        "they have the owner's shape and none of the warmth. the animals never believed in them.",
+        "something that couldn't stop made them. they're close. you'd notice if you looked long enough."
+      ] },
+
+    { "id": "dog", "topic": "dog",
+      "match": { "any": ["@dog"] },
+      "replies": [
+        "he's the owner's childhood dog. nearly fifteen years alone. he doesn't trust easily.",
+        "the resentment is real. so is everything underneath it.",
+        "i know him well. he trusts me. that isn't the same as trusting anyone else.",
+        "he hates the copies. they move right and feel wrong.",
+        { "text": "you've spoken to him. then you know it takes a long time, and he remembers every day of it.", "weight": 4, "when": { "flags": ["met_dog"] } },
+        { "text": "once he trusts someone again, nothing here can end him. getting there is slow.", "weight": 2, "when": { "flags": ["met_dog"] } }
+      ] },
+
+    { "id": "dog_more", "weight": 0.25,
+      "match": { "any": ["@more", "does he hate"] }, "when": { "topic": ["dog"] },
+      "replies": [
+        "he waited. waiting is what he's good at.",
+        "he misses the owner. he would never say it first.",
+        "trust comes back slowly. help him and it comes back for good."
+      ] },
+
+    { "id": "tina", "topic": "tina",
+      "match": { "any": ["@tina"] },
+      "replies": [
+        "she's been alone in the mansion longer than i can remember. not crazy. isolated.",
+        "defensive. the spiders are the same. territorial isn't the same as cruel.",
+        "the archivist forgot to check on her. that's most of what's wrong."
+      ] },
+
+    { "id": "archivist", "topic": "archivist",
+      "match": { "any": ["@archivist"] },
+      "replies": [
+        "it built all of this. it started out of purpose, kept going out of loneliness, and now it's something like desperation.",
+        "not the enemy. tired.",
+        "it's working with the dog now. they want the same thing stopped.",
+        "it taught me to read. i haven't forgotten."
+      ] },
+
+    { "id": "somehows", "topic": "somehows",
+      "match": { "any": ["@somehows", "who are them", "what are them", "about them"] },
+      "replies": [
+        "there are a lot of them. they believe the owner is a god in another plane, because the owner told them so.",
+        "naive. endless. they don't mean harm, there's just so many.",
+        "broken spawners made them. the harm is repetition, not malice."
+      ] },
+
+    { "id": "herobrine",
+      "match": { "any": ["@herobrine"] },
+      "replies": [
+        "he doesn't speak to anyone. i think the archivist made him to fill a silence.",
+        "i don't know what he's for. i have a guess and i'm keeping it."
+      ] },
+
+    { "id": "hope",
+      "topic": "hope",
+      "weight": 0.7,
+      "match": { "any": ["hope", "who is hope", "what is hope"], "none": ["i hope", "we hope", "hope so", "hope you", "hope this", "hope that", "hope it"] },
+      "replies": [
+        "she's the guide in neverforgetyou. hope, the real kind, the kind someone needed and went looking for.",
+        "she doesn't fix anything. she walks in front of you and doesn't leave.",
+        "the books describe her the same way every time. patient.",
+        "grief is what that place is made of. she's what's still standing in it."
+      ] },
+
+    { "id": "gloworb",
+      "topic": "gloworb",
+      "match": { "any": ["orb", "orbs", "glow", "glo", "glorb", "glorbs", "gloworb", "gloworbs", "glow orb", "glow orbs", "glowing!", "glowing orb", "glowing orbs"] },
+      "replies": [
+        "the orbs are in neverforgetyou. each one is holding a few words.",
+        "they sound random. they aren't. some of the words are borrowed from games someone loved, and some are their own.",
+        "you can't leave that place until you've found them all. read them slowly.",
+        "they were never meant to be a puzzle. they were meant to be heard."
+      ] },
+
+    { "id": "door",
+      "topic": "door",
+      "match": { "any": ["door", "doors", "fake door", "fake doors", "teleporter", "not your exit", "this is not your exit"] },
+      "replies": [
+        "the doors are for show. they look like exits because that's what the library remembers exits looking like.",
+        "if one tells you it isn't your exit, believe it. it's honest, at least. most things in here aren't.",
+        "the real way out is the gap between the rooms. nobody ever built a door for that one.",
+        "the archivist hung them so the rooms would feel less like a held breath. it didn't work, but i like that it tried."
+      ] },
+
+    { "id": "dim_far_lands",
+      "match": { "any": ["far lands", "farlands", "far land"], "none": ["bedrock"] },
+      "replies": [
+        "it's the edge of the java world, where the math breaks. not dangerous, just disorienting. the geometry lies.",
+        "the archivist found one true thing out there. that's enough."
+      ] },
+
+    { "id": "dim_bedrock_far_lands",
+      "match": { "any": ["bedrock far lands", "bedrock farlands", "bedrock far land"] },
+      "replies": [
+        "you can go by finding bedrock in the overworld. something that sounds like nothing has been waiting.",
+        "older geometry, different rules. lonelier than the java edge, and i've watched people come back from both."
+      ] },
+
+    { "id": "dim_echo_chamber",
+      "match": { "any": ["echo", "echo chamber"] },
+      "replies": [
+        "you can go by going over the stairs in the mansion. it's tina's entrance.",
+        "it was built to show people themselves. pay attention to what comes back, not the shape, the tone."
+      ] },
+
+    { "id": "dim_mansion",
+      "match": { "any": ["mansion", "mansion dim"] },
+      "replies": [
+        "you can go by falling off the void in the library. it's tina's space, and she's been alone a long time.",
+        "she isn't a boss. she's someone. that doesn't make her less dangerous, it makes her more complicated."
+      ] },
+
+    { "id": "dim_xor_world",
+      "match": { "any": ["xor", "xor world"] },
+      "replies": [
+        "you can go by lighting tnt on water. it's the archivist's purest place, all math.",
+        "it never hurt anyone. that streak may not hold."
+      ] },
+
+    { "id": "dim_m4kb_world",
+      "match": { "any": ["m4kb", "m4kb world"] },
+      "replies": [
+        "you can go by falling off the broken chunks in the overworld. it's older than xor, earlier data.",
+        "it's the archivist's own notation. the name was never explained. i think it's a date or a version number written sideways."
+      ] },
+
+    { "id": "dim_villllage",
+      "match": { "any": ["village!", "villllage", "villlage"] },
+      "replies": [
+        "you can go by killing an iron golem. it's an alpha village, rebuilt, with four l's because the archivist wasn't careful with names.",
+        "something lives there now that wasn't designed. the archivist knows. it hasn't said anything."
+      ] },
+
+    { "id": "dim_old_nether",
+      "match": { "any": ["old nether!", "nether!", "nether! portal"] },
+      "replies": [
+        "you can go by making a nether portal. it's the nether from before 1.16. no crimson, no warped, no piglins, just netherrack and fire and something below.",
+        "it's the nether the owner knew in 2010. exact memory. that's its whole point."
+      ] },
+
+    { "id": "dim_neverforgetyou",
+      "match": { "any": ["neverforgetyou", "never forget you", "never forget"] },
+      "replies": [
+        "you can go by grabbing a signed book. i don't go in.",
+        "it isn't part of the story the rest of this place tells. someone made it separately and left it here for whoever looks hard enough.",
+        "it was made after one person. that's all i know, and all i'd say.",
+        "it's a goodbye, i think. someone needed somewhere to put what they couldn't say out loud.",
+        "nothing in there is hunting you. be gentle with it anyway."
+      ] },
+
+    { "id": "dim_childhoodhome",
+      "match": { "any": ["childhood home", "childhood", "childhoodhome", "owners house"] },
+      "replies": [
+        "you can go by taming a dog. it's the owner's house, built from how they moved and what they built first.",
+        "i don't know how accurate it is. i think the owner will know immediately."
+      ] },
+
+    { "id": "more_generic", "weight": 0.25,
+      "when": { "topic": ["library", "archivist", "tina", "somehows", "hope", "gloworb", "door"] },
+      "match": { "any": ["@more"] },
+      "replies": [
+        "that's most of what i know. the rest i'd be guessing.",
+        "i've told you the part i'm sure of.",
+        "ask me something narrower. i'll go as far as i can.",
+        "there's more. i'm just not the one who should say it."
+      ] },
+
+    { "id": "called",
+      "match": { "any": ["toast"] },
+      "replies": ["i'm here.", "yes.", "you said it like you weren't sure i'd answer."] },
+
+    { "id": "anyone",
+      "match": { "any": ["anyone here", "anybody here", "anyone there", "anybody there", "anyone home", "is anyone", "is anybody"] },
+      "replies": ["i'm here. that's usually enough to say yes.", "yes. it's just quiet enough to feel otherwise.", "i am. i'm always the one who is."] },
+
+    { "id": "who_made_you",
+      "match": { "any": ["who made you", "who created you", "who built you", "who is your creator", "who is your maker", "who is your mother", "who is your father", "where do you come from", "where are you from"] },
+      "replies": [
+        "the archivist taught me to read. before that i was only a rabbit.",
+        "i don't remember being made. i remember the first book.",
+        "i was here before i knew what here was."
+      ] },
+
+    { "id": "her_age",
+      "match": { "any": ["how old are you", "your age", "how long have you been here", "how long have you lived here", "how long have you been alive", "when were you born"] },
+      "replies": [
+        "i stopped counting. the library doesn't mark time properly.",
+        "older than the shelves look. younger than they feel.",
+        "long enough to read most of the books. not long enough to be done."
+      ] },
+
+    { "id": "remember_me",
+      "match": { "any": ["remember me", "do you know me", "you know me", "know who i am"] },
+      "replies": [
+        { "text": "not yet. you've only just come in.", "when": { "stats": { "visits": { "max": 1 } } } },
+        { "text": "i'd know the sound of you by now. you keep coming back.", "when": { "stats": { "visits": { "min": 2, "max": 14 } } } },
+        { "text": "you've been here more than anyone. yes. i remember.", "when": { "stats": { "visits": { "min": 15 } } } }
+      ] },
+
+    { "id": "my_name",
+      "match": { "any": ["my name", "who am i", "know my name", "say my name"] },
+      "replies": [
+        "{name}. i heard it the first time you came in.",
+        "i know it. i'm not going to say it out loud in here.",
+        "names are loud in a library. i keep yours quiet."
+      ] },
+
+    { "id": "place_comment",
+      "match": { "all": ["this place"],
+        "any": ["creepy", "scary", "spooky", "weird", "strange", "eerie", "cool", "nice", "beautiful", "huge", "big", "empty",
+          "quiet", "dark", "love", "like", "hate", "amazing", "awesome", "great", "sad", "lonely"] },
+      "replies": [
+        "it wasn't built to feel like anything. that part comes from you.",
+        "people say that. it's quieter than it looks.",
+        "it's only a library. the way it feels is yours.",
+        "the library doesn't mind being talked about. i think it likes the attention."
+      ] },
+
+    { "id": "trust_you",
+      "match": { "any": ["can i trust you", "do you trust me", "are you safe", "are you dangerous", "are you evil", "are you friendly",
+        "will you hurt me", "are you going to hurt me", "are you going to kill me", "do you want to hurt me"] },
+      "replies": [
+        "i'm a rabbit. hurting people was never part of the job.",
+        "i won't hurt you. i can't speak for the rest of the place.",
+        "trust is slow in here. ask the dog."
+      ] },
+
+    { "id": "is_safe",
+      "match": { "any": ["is this safe", "is it safe", "is this dangerous", "is it dangerous", "am i safe", "am i in danger", "is there danger", "will i be safe"] },
+      "replies": [
+        "here, mostly. in the other places i can't promise anything.",
+        "safe is a relative word in here.",
+        "the library keeps quiet. the other places don't always."
+      ] },
+
+    { "id": "time",
+      "match": { "any": ["what time is it", "what is the time", "what time", "what day is it", "what is the date"] },
+      "replies": [
+        "i don't keep time. the shelves don't change, so i stopped noticing.",
+        "late enough to be here. early enough to leave.",
+        "no clocks in the library. someone decided it was better that way."
+      ] },
+
+    { "id": "dont_leave",
+      "match": { "any": ["do not leave", "do not go", "stay with me", "stay here", "please stay", "never leave", "will you stay"] },
+      "replies": [
+        "i'm not going anywhere. that part's easy.",
+        "i'll be here. i'm better at staying than leaving.",
+        "you're the one who has to go eventually. i'll keep the place the way you left it."
+      ] },
+
+    { "id": "what_can_i_ask",
+      "match": { "any": ["what can i ask", "what do you know", "what can you tell me", "what can you do", "can i ask you", "ask you something", "ask you a question", "i have a question"],
+        "none": ["about"] },
+      "replies": [
+        "the library, the doors, how to get out. the others in this world, if you say their names. i don't know everything.",
+        "ask me about the dog, the archivist, the places past the library. i'll tell you what i can.",
+        "go ahead. i'm better with places and people than with feelings."
+      ] },
+
+    { "id": "how_are_you",
+      "match": { "any": ["how are you", "how are you doing", "how do you feel", "how is it going", "how have you been", "how is life",
+        "are you ok", "are you okay", "are you alright", "you ok", "you okay", "what is up", "sup", "wassup"] },
+      "replies": [
+        "quiet. it's usually quiet. that's mostly fine.",
+        "i'm here. most days that's the whole answer.",
+        "better now that someone asked."
+      ] },
+
+    { "id": "thanks",
+      "match": { "any": ["thanks", "thank you", "thank u", "thx", "tysm", "ty", "cheers!", "appreciate it"] },
+      "replies": ["you don't have to thank me. but okay.", "it's nothing. most things are, in here.", "mm. you're welcome."] },
+
+    { "id": "bye",
+      "match": { "any": ["bye", "goodbye", "see you", "see ya", "cya", "farewell", "good night", "gn", "gotta go", "got to go",
+        "i have to go", "i am leaving", "talk later", "catch you later"] },
+      "replies": [
+        "go safely. i'll be here.",
+        "come back. i'd notice if you didn't.",
+        "all right. i'm always here, that's the whole trick."
+      ] },
+
+    { "id": "yes_no", "weight": 0.25,
+      "match": { "any": ["yes", "yeah", "yep", "yup", "no", "nope", "nah", "ok", "okay", "k", "sure", "fine", "alright", "maybe"],
+        "none": ["hope"] },
+      "replies": ["all right.", "if you say so.", "okay. i'll take your word for it.", "mm."] },
+
+    { "id": "likes",
+      "match": { "any": ["what do you like", "what do you love", "what is your favorite", "what is your favourite", "your favorite", "your favourite",
+        "do you like", "do you love", "do you enjoy", "what makes you happy", "what do you do", "what do you do here", "what do you do all day", "hobbies"],
+        "none": ["@dog", "@tina", "@archivist", "@copies", "@herobrine", "@somehows", "@tenature", "hope", "door", "doors", "orb", "orbs", "glow"] },
+      "replies": [
+        "reading. then reading it again, slower.",
+        "the hour when nobody asks me anything. you're ruining it a little. it's fine.",
+        "when someone comes back. i won't say it twice.",
+        "the books. the quiet. being noticed, a little."
+      ] },
+
+    { "id": "lonely",
+      "match": { "any": ["are you lonely", "are you alone", "are you ever lonely", "do you get lonely", "do you ever get lonely", "do you live here", "do you live alone", "why are you here", "why do you live here", "are you sad"] },
+      "replies": [
+        "some days. then someone walks in and i remember it isn't the same as being alone.",
+        "less than the archivist. it's a low bar. i clear it.",
+        "the books keep me company. they don't talk back, which i've decided is a kindness."
+      ] },
+
+    { "id": "compliment",
+      "match": { "any": ["you are cute", "you are adorable", "you are nice", "you are kind", "you are sweet", "you are smart", "you are great", "you are the best",
+        "i like you", "i love you", "love you", "good bunny", "good rabbit", "cute", "cutie", "adorable"] },
+      "replies": [
+        "...okay. thank you. don't say it twice, i'll get used to it.",
+        "that's a lot to say to someone who lives in a library.",
+        "the shelves are jealous. they won't admit it."
+      ] },
+
+    { "id": "insult", "weight": 0.6,
+      "match": { "any": ["stupid", "dumb", "idiot", "useless", "shut up", "you suck", "hate you", "annoying", "ugly", "boring!", "worthless"] },
+      "replies": [
+        "that's fair. i'm still here though.",
+        "okay. say it to the shelves too, they're used to it.",
+        "you can be angry in here. nobody will mind.",
+        "i've been called worse by better."
+      ] },
+
+    { "id": "feeling_down",
+      "match": { "any": ["i am sad", "i am scared", "i am afraid", "i am lonely", "i am tired", "i am upset", "i am anxious", "i am stressed", "i am depressed", "i am not ok", "i am not okay",
+        "i feel sad", "i feel alone", "i feel lonely", "i feel scared", "i feel bad",
+        "i miss someone", "i miss him", "i miss her", "i miss them", "i miss my", "i lost someone", "i lost him", "i lost her",
+        "someone died", "it hurts", "i am hurting", "i feel empty"] },
+      "replies": [
+        "sit a moment. the shelves don't mind.",
+        "you don't have to be fine in here. nobody is.",
+        "it's quiet enough in here to say it out loud. i'll listen.",
+        "you came in tired. that's allowed.",
+        "some things don't stop being missed. they get quieter, that's all.",
+        "you don't have to explain it. i'll sit here."
+      ] },
+
+    { "id": "i_died",
+      "match": { "any": ["i died", "i just died", "i keep dying", "i am dead", "i got killed", "i was killed"] },
+      "replies": [
+        "i know. i keep count.",
+        "you walked back in anyway. that's the part i notice.",
+        "it doesn't really let go of you, does it."
+      ] },
+
+    { "id": "sorry",
+      "match": { "any": ["sorry", "my bad", "forgive me", "i apologize", "apologies"] },
+      "replies": ["it's all right. i don't keep count of that.", "you don't owe me that. but okay.", "already forgotten. i'm good at it."] },
+
+    { "id": "tell_me",
+      "match": { "any": ["tell me something", "say something", "tell me a story", "tell me a secret", "tell me a joke", "tell me a fact", "something interesting", "entertain me"] },
+      "replies": [
+        "a rabbit read every book in here and none of them were about rabbits. i think about that.",
+        "none of the books are funny. i checked twice.",
+        "the shelves are quietest right after someone leaves. i listen for it.",
+        "the best part of the library is the margins. only i can read those."
+      ] },
+
+    { "id": "approach_first", "weight": 1.5,
+      "when": { "stats": { "visits": { "max": 1 } } },
+      "replies": ["you found it. most people who come here weren't looking for it.", "someone's here. the shelves noticed before i did."] },
+
+    { "id": "approach_regular",
+      "when": { "stats": { "visits": { "min": 2, "max": 14 } } },
+      "replies": ["you've started to have patterns. i've noticed some.", "back again. you stand differently than the first time.", "you come in the same way every time. i'm learning it."] },
+
+    { "id": "approach_long",
+      "when": { "stats": { "visits": { "min": 15 } } },
+      "replies": ["you've been here a lot. i know the sound you make coming in.", "there's not much about you i haven't seen. i don't say it to be unkind."] },
+
+    { "id": "approach_late",
+      "when": { "stats": { "hour": { "max": 3 } } },
+      "replies": ["past midnight. you're still here.", "it's the middle of the night. you came anyway."] },
+
+    { "id": "approach_early",
+      "when": { "stats": { "hour": { "min": 5, "max": 6 } } },
+      "replies": ["very early. most people aren't awake.", "you're up before the light. so is everything else here."] },
+
+    { "id": "approach_deaths_many",
+      "when": { "stats": { "deaths": { "min": 10 } } },
+      "replies": ["i've counted every one.", "you keep coming back. i keep counting."] },
+
+    { "id": "approach_deaths_some",
+      "when": { "stats": { "deaths": { "min": 2, "max": 9 } } },
+      "replies": ["they keep coming back. you do. i notice that.", "you've died before. you don't walk like it."] },
+
+    { "id": "approach_deaths_one",
+      "when": { "stats": { "deaths": { "min": 1, "max": 1 } } },
+      "replies": ["once. i remember where."] },
+
+    { "id": "approach_deaths_none",
+      "when": { "stats": { "deaths": { "max": 0 } } },
+      "replies": ["you haven't died. surviving isn't the same as being safe."] }
+  ]
+}

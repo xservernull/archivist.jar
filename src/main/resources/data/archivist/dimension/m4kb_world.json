@@ -1,0 +1,11 @@
+{
+  "type": "archivist:m4kb_world",
+  "generator": {
+    "type": "archivist:realm",
+    "kind": "m4kb_world",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraft:the_void"
+    }
+  }
+}

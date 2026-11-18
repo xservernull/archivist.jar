@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=x": { "model": "archivist:block/log_4kb_horizontal", "x": 90, "y": 90 },
+    "axis=y": { "model": "archivist:block/log_4kb" },
+    "axis=z": { "model": "archivist:block/log_4kb_horizontal", "x": 90 }
+  }
+}

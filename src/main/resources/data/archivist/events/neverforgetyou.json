@@ -1,0 +1,200 @@
+{
+  "_comment": "Neverforgetyou event text, copied word for word from the old mod (hopedialogue, hopeentity, gloworbhandler). Line markers (kept from the old code): 'YOU:text' = a player line, 'RAW:text' = grey italic narrator line, 'ORB_TOAST:n' = show orb_quotes[n] as a floating toast, 'CHOICE:key' = ask the choice named key under 'choices'. Any other line is spoken by Hope. Section signs are Minecraft colour codes and are kept as written. In the old code every book page was wrapped in italics, so book.italic is true and the pages here have no colour codes. Every text line is 'archivist.key|english': the key is looked up in assets/archivist/archivist_lang/<code>.json (the language picked in the Archivist menu), the English after the bar is the fallback and what the line timing is measured on. The markers stay in front of the key.",
+  "orb_quotes": [
+    "archivist.nfy.quote.0|see beauty in all things",
+    "archivist.nfy.quote.1|this too will pass",
+    "archivist.nfy.quote.2|art can be anything",
+    "archivist.nfy.quote.3|you can't leave until you find them all",
+    "archivist.nfy.quote.4|imgur.com/a/9gJaqHp",
+    "archivist.nfy.quote.5|not even the dirt they throw on your dead body will ever cover the love that hides in your heart",
+    "archivist.nfy.quote.6|once you leave what you love, the cold will bite that much harder",
+    "archivist.nfy.quote.7|stop begging with blood on your teeth",
+    "archivist.nfy.quote.8|even the strongest of flowers battle the rain",
+    "archivist.nfy.quote.9|i guess thats the way things go"
+  ],
+  "entry": [
+    "RAW:archivist.nfy.entry.1|§8[ if anything freezes try /archivistdebug spawn event hope ]",
+    "archivist.nfy.entry.2|you always look confused when you first arrive here",
+    "YOU:archivist.nfy.entry.3|...first arrive?",
+    "archivist.nfy.entry.4|people come here long before they know this place exists",
+    "YOU:archivist.nfy.entry.5|who are you??",
+    "archivist.nfy.entry.6|your guide",
+    "YOU:archivist.nfy.entry.7|this place feels old",
+    "archivist.nfy.entry.8|it isn't. it was simply built from things that aged too quickly",
+    "YOU:archivist.nfy.entry.9|what... happened here?",
+    "archivist.nfy.entry.10|someone loved another person more than they knew how to survive.",
+    "archivist.nfy.entry.11|i think you know who it was.",
+    "YOU:archivist.nfy.entry.12|and this place came from that?",
+    "archivist.nfy.entry.13|grief is creative.",
+    "archivist.nfy.entry.14|it has built cathedrals out of less.",
+    "RAW:archivist.nfy.entry.15|§8[ follow Hope ]",
+    "archivist.nfy.entry.16|come, they are waiting"
+  ],
+  "orbs": [
+    [
+      "ORB_TOAST:0",
+      "YOU:archivist.nfy.orb0.2|that sounds impossible.",
+      "archivist.nfy.orb0.3|its necessary",
+      "archivist.nfy.orb0.4|when life becomes unbearable, people start surviving off small beautiful things.",
+      "archivist.nfy.orb0.5|a song.",
+      "archivist.nfy.orb0.6|a voice.",
+      "archivist.nfy.orb0.7|a memory that still feels warm."
+    ],
+    [
+      "ORB_TOAST:1",
+      "YOU:archivist.nfy.orb1.2|people say that, like it's comforting...",
+      "archivist.nfy.orb1.3|it terrifies me more than being unable to die.",
+      "YOU:archivist.nfy.orb1.4|why?",
+      "archivist.nfy.orb1.5|because it applies to everything. pain, love, people...",
+      "archivist.nfy.orb1.6|everything. only consequences stay."
+    ],
+    [
+      "ORB_TOAST:2",
+      "YOU:archivist.nfy.orb2.2|so this dimension is art?",
+      "archivist.nfy.orb2.3|yes, a final attempt at being understood.",
+      "YOU:archivist.nfy.orb2.4|did anybody understand it?",
+      "archivist.nfy.orb2.5|you are here, aren't you?"
+    ],
+    [
+      "ORB_TOAST:3",
+      "YOU:archivist.nfy.orb3.2|that's threatening.",
+      "archivist.nfy.orb3.3|threats want power.",
+      "archivist.nfy.orb3.4|desperation only wants to be noticed before it disappears."
+    ],
+    [
+      "ORB_TOAST:4",
+      "YOU:archivist.nfy.orb4.2|i don't get this one.",
+      "archivist.nfy.orb4.3|me neither."
+    ],
+    [
+      "ORB_TOAST:5",
+      "archivist.nfy.orb5.2|people mock devotion until they experience it themselves",
+      "YOU:archivist.nfy.orb5.3|that's too much love for one person.",
+      "archivist.nfy.orb5.4|love with nowhere else to go."
+    ],
+    [
+      "ORB_TOAST:6",
+      "archivist.nfy.orb6.2|did you leave them?",
+      "CHOICE:orb6"
+    ],
+    [
+      "ORB_TOAST:7",
+      "archivist.nfy.orb7.2|that one's awful...",
+      "archivist.nfy.orb7.3|honest, but a last attempt to save something that you know already died.",
+      "CHOICE:orb7"
+    ],
+    [
+      "ORB_TOAST:8",
+      "archivist.nfy.orb8.2|i think this one's my favorite.",
+      "YOU:archivist.nfy.orb8.3|because it feels gentler than the others...?",
+      "archivist.nfy.orb8.4|strength is usually gentler than people expect."
+    ],
+    [
+      "ORB_TOAST:9",
+      "YOU:archivist.nfy.orb9.2|that's such a small ending...",
+      "archivist.nfy.orb9.3|most real endings are.",
+      "archivist.nfy.orb9.4|you probably know that.",
+      "archivist.nfy.orb9.5|you're human for a reason.",
+      "archivist.nfy.orb9.6|you're still here for a reason."
+    ]
+  ],
+  "choices": {
+    "orb6": {
+      "options": [
+        {
+          "key": "orb6_yes",
+          "label": "archivist.nfy.orb6.orb6_yes.label|yes",
+          "button": "archivist.nfy.orb6.orb6_yes.button|§9[ yes ]"
+        },
+        {
+          "key": "orb6_no",
+          "label": "archivist.nfy.orb6.orb6_no.label|no",
+          "button": "archivist.nfy.orb6.orb6_no.button|§a[ no ]"
+        }
+      ],
+      "responses": {
+        "orb6_yes": [
+          "archivist.nfy.orb6.orb6_yes.1|i see. maybe it was the best decision.",
+          "YOU:archivist.nfy.orb6.orb6_yes.2|i guess i met them for a reason.",
+          "archivist.nfy.orb6.orb6_yes.3|your friends are like your family. your partner is, too.",
+          "archivist.nfy.orb6.orb6_yes.4|take good care of them."
+        ],
+        "orb6_no": [
+          "archivist.nfy.orb6.orb6_no.1|i see. maybe it was the best decision.",
+          "YOU:archivist.nfy.orb6.orb6_no.2|i guess i met them for a reason.",
+          "archivist.nfy.orb6.orb6_no.3|your friends are like your family. your partner is, too.",
+          "archivist.nfy.orb6.orb6_no.4|take good care of them."
+        ]
+      }
+    },
+    "orb7": {
+      "options": [
+        {
+          "key": "orb7_silence",
+          "label": "archivist.nfy.orb7.orb7_silence.label|(silence)",
+          "button": "archivist.nfy.orb7.orb7_silence.button|§7[ (silence) ]"
+        },
+        {
+          "key": "tried",
+          "label": "archivist.nfy.orb7.tried.label|i tried.",
+          "button": "archivist.nfy.orb7.tried.button|§9[ i tried. ]"
+        }
+      ],
+      "responses": {
+        "orb7_silence": [],
+        "tried": [
+          "archivist.nfy.orb7.tried.1|oh dear. i know you tried.",
+          "archivist.nfy.orb7.tried.2|you should've stopped when you could."
+        ]
+      }
+    }
+  },
+  "final_lines": [
+    "YOU:archivist.nfy.final.1|what's this?",
+    "archivist.nfy.final.2|a place for the things you cannot carry alone anymore, and... an example.",
+    "YOU:archivist.nfy.final.3|and if I come back?",
+    "archivist.nfy.final.4|i will still be here.",
+    "YOU:archivist.nfy.final.5|so... what are you, really?",
+    "archivist.nfy.final.6|a wound somebody kept alive long enough for it to become art.",
+    "archivist.nfy.final.7|bye"
+  ],
+  "message_orbs": [
+    "archivist.nfy.msg.1|B1- Your purpose was to listen",
+    "archivist.nfy.msg.2|B2- and yet at every turn you have interfered",
+    "archivist.nfy.msg.3|B3- Have you not been paying attention?",
+    "archivist.nfy.msg.4|B4- Did it not occur to you that",
+    "archivist.nfy.msg.5|B5- your intrusion would be felt?",
+    "archivist.nfy.msg.6|B6- And still you harass",
+    "archivist.nfy.msg.7|B7- And now, ",
+    "archivist.nfy.msg.8|B8- you will be swallowed.",
+    "archivist.nfy.msg.9|THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END",
+    "archivist.nfy.msg.10|A1- You call it yours because you remember placing the first piece,",
+    "archivist.nfy.msg.11|A2- but memory is not proof of origin.",
+    "archivist.nfy.msg.12|A3- Everything you touch feels familiar in a way you cannot explain,",
+    "archivist.nfy.msg.13|A4- as if you are repeating something rather than creating it.",
+    "archivist.nfy.msg.14|A5- You change names, directions, outcomes,",
+    "archivist.nfy.msg.15|A6- but nothing resists you,",
+    "archivist.nfy.msg.16|A7- nothing acknowledges you.",
+    "archivist.nfy.msg.17|A8- If this world were truly yours,",
+    "archivist.nfy.msg.18|A9- wouldnt it react to you like...",
+    "archivist.nfy.msg.19|A10- ...something that belongs?."
+  ],
+  "book": {
+    "title": "hope",
+    "author": "hope",
+    "italic": true,
+    "warning_page": "archivist.nfy.book.warning|[ This book contains themes of grief, loss, and love.\n\nPlease take care of yourself. ]",
+    "pages": [
+      "archivist.nfy.book.1|It does not hurt the way it used to, but it still hurts. The ache is quieter now, buried under routine and silence. People say time heals everything, but they do not tell you that healing can look like pretending.",
+      "archivist.nfy.book.2|I do not cry as much, but i still feel you in moments i cannot explain. A song, a scent, a sudden memory, and it all comes back. The pain has changed shape, but it never really left.\n\nI learned how to carry it without breaking.",
+      "archivist.nfy.book.3|I smile more now, but it is a softer kind of smile, the kind that remembers even as it lets go and keeps walking.\n\nI will not reach to you anymore.",
+      "archivist.nfy.book.4|I will not check your updates, not search for pieces of your life in places i know you exist. But somewhere inside me, i still wish you well.\n\nIt is a quiet kind of love now, one that does not ask for anything in return.",
+      "archivist.nfy.book.5|I hope you are finding peace, comfort, and the kind of happiness we could not give each other. Loving you from afar hurts, but it also feels honest.",
+      "archivist.nfy.book.6|It reminds me that what we shared was real, even if it ended before we understood how to save it.\n\nI no longer expect to be part of your story, and maybe that acceptance is its own form of healing.",
+      "archivist.nfy.book.7|Still, there's a part of me that whispers hope into the world for you, not because i want you back, but because love does not disappear just because distance grows.",
+      "archivist.nfy.book.8|And it kept growing. It ate us alive, my dear.\n\nAnd even though i still try to maintain myself standing, i have to believe that somewhere, somehow, it was worth it.",
+      "archivist.nfy.book.9|I wish you nothing but the best, and i'm truly sorry to myself, because every single person, place or attempt i made to forget you only ended up on missing you more every single day.",
+      "archivist.nfy.book.10|I know i cannot beg to be noticed the same way i did before.\n\nLetting you be is another way of loving you.\n\nAnd i hope that way hurts you less."
+    ]
+  }
+}

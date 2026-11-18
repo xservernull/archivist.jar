@@ -1,0 +1,315 @@
+{
+  "_comment": "Toast in Brazilian Portuguese. Overlay on qa/toast.json, format in talk/QaOverlay: replies keep the base order and count, match words are ADDED to the English ones (English still works), accents are ignored by the matcher. Same house style as the base: lowercase, no '!', max 4 sentences. Toast is a she (her_age).",
+  "speaker": "toast",
+  "lang": "pt",
+
+  "synonyms": {
+    "dog": ["cachorro", "cachorrinho", "cachorra", "cao", "doguinho"],
+    "copies": ["copia", "copias", "imitacao", "imitacoes", "falso", "falsos", "falsa", "falsas", "clone", "clones"],
+    "somehows": ["cara de terra", "caras de terra"],
+    "tina": ["aranha", "aranhas"],
+    "archivist": ["arquivista", "bibliotecario", "bibliotecaria"],
+    "more": ["por que", "porque", "como assim", "conte mais", "me conte mais", "o que mais", "continue", "e depois", "e entao", "mais"]
+  },
+
+  "fallbacks": {
+    "normal": [
+      "me deixa em paz.",
+      "me dá um tempo, não estou acostumada a ver gente por aqui...",
+      "você precisava mesmo falar, hein.",
+      "para. vai fazer outra coisa, sei lá",
+      "hã."
+    ],
+    "quiet": ["...", "agora não.", "um momento de silêncio.", "me dá um segundo.", "depois."],
+    "question": [
+      "essa eu não sei.",
+      "me pergunte algo que as estantes saibam.",
+      "isso não está em nenhum livro que eu li.",
+      "eu poderia chutar. prefiro não.",
+      "não tenho resposta para isso. perguntas eu tenho de sobra.",
+      "hm. pergunte de outro jeito. sou lenta para algumas coisas."
+    ],
+    "statement": [
+      "mm.",
+      "estou ouvindo.",
+      "tudo bem.",
+      "se você diz.",
+      "anotado. as estantes vão lembrar.",
+      "continue, se tiver mais."
+    ]
+  },
+
+  "entries": {
+    "greet": {
+      "match": ["ola", "oi", "oie", "opa", "e ai", "bom dia", "boa tarde", "boa noite", "prazer", "muito prazer", "saudacoes", "salve"],
+      "replies": ["olá. você veio de muito longe para dizer isso.", "oi. as estantes ouviram você.", "você faz muito barulho para alguém tão novo."]
+    },
+    "what_is_place": {
+      "match": ["que lugar e este", "que lugar e esse", "o que e este lugar", "o que e esse lugar", "o que e isso", "o que e isto", "onde estou", "onde estamos", "o que tem aqui", "o que e a biblioteca", "o que e esta biblioteca", "me fale deste lugar", "fale da biblioteca", "biblioteca"],
+      "none": ["mundo", "jogo", "cachorro", "cao", "livro", "livros", "porta", "portas", "orbe", "orbes", "criatura", "mob", "coelha", "coelho"],
+      "replies": ["este lugar é a biblioteca. o arquivista a construiu antes de a solidão fazer todo o resto.", "a biblioteca. a primeira coisa que foi construída. tudo depois dela foi feito por alguém mais cansado.", "é a biblioteca. você não consegue ler os livros, só as cores deles. eu consigo."]
+    },
+    "library_books": {
+      "match": ["livros", "livro", "voce sabe ler", "sabe ler", "aprender a ler", "te ensinaram a ler", "estantes", "estante", "cores"],
+      "replies": ["eu consigo lê-los. você só vê as cores. provavelmente é mais gentil assim.", "o arquivista me ensinou. os livros me ensinaram o resto."]
+    },
+    "library_leave": {
+      "match": ["como saio", "como eu saio", "como vou embora", "como escapo", "sair", "saida", "escapar", "como faco para sair", "como posso sair"],
+      "none": ["nao saio", "nunca saio", "nao quero sair"],
+      "replies": ["há uma fresta do lado de fora da porta, entre as salas. é a única saída.", "depois da porta. a fresta. você vai ver quando parar de procurar escadas."]
+    },
+    "who_are_you": {
+      "match": ["quem e voce", "quem e vc", "o que e voce", "como voce se chama", "seu nome", "voce e uma coelha", "voce e um coelho", "coelha", "coelho", "coelhinha"],
+      "replies": ["eu sou a toast. moro aqui.", "uma coelha. o arquivista me ensinou a ler e eu nunca parei.", "toast. estou aqui há mais tempo do que você está procurando."]
+    },
+    "are_you_ai": {
+      "match": ["voce e uma ia", "voce e um bot", "voce e real", "voce e um robo", "voce e humana", "voce e humano", "modelo de linguagem"],
+      "replies": ["eu sou a toast. moro aqui.", "sou uma coelha criada numa biblioteca. isso responde?", "real o bastante para notar que você entrou."]
+    },
+    "what_do_i_do": {
+      "match": ["o que eu faco", "o que devo fazer", "o que fazer", "e agora", "agora o que", "para onde eu vou", "pra onde eu vou", "ajuda", "me ajude", "me ajuda", "estou perdido", "estou perdida", "nao sei o que fazer"],
+      "replies": ["essa não é uma pergunta que eu possa responder. você já sabe do que está fugindo.", "posso dizer onde as coisas estão. o que você faz com elas é com você.", "vá a algum lugar. depois volte e me conte como foi."]
+    },
+    "about_world": {
+      "match": ["mundo", "alfa", "quantos anos", "ha quanto tempo", "desde quando", "que ano", "e um jogo", "isto e um jogo", "isso e um jogo"],
+      "replies": ["começou em 2010. pararam de olhar para ele em 2011. ele nunca parou.", "já não é um jogo. não sei o que é. continua funcionando."]
+    },
+    "about_owner": {
+      "match": ["dono", "dona", "criador", "criadora", "quem fez o mundo", "quem fez este mundo", "quem comecou isso", "quem comecou isto"],
+      "replies": ["alguém fez este lugar. ficou uns quinze anos fora. o mundo ainda conhece o seu formato.", "fico feliz que tenha voltado. acho que sou a única aqui que fica."]
+    },
+    "tenature": {
+      "match": ["o que e essa coisa", "quem expulsou", "quem chutou"],
+      "replies": ["era um programa. continuou rodando depois que o dono saiu, e o estudou até virar outra coisa.", "não é um monstro. algo que ficou sem propósito e continuou assim mesmo.", "expulsou o dono. não terminou. não sei como é terminar para ele."]
+    },
+    "tenature_more": {
+      "replies": ["ele não sabia como parar. então não parou.", "viu eles irem embora e continuou rodando. isso é quase tudo.", "ele tem que acabar. só não sei como isso se parece."]
+    },
+    "copies": {
+      "match": ["outras versoes", "dono falso", "dona falsa"],
+      "replies": ["elas se movem direitinho. cavam os mesmos túneis, ficam nas portas, dormem durante as tempestades.", "têm a forma do dono e nada do seu calor. os animais nunca acreditaram nelas.", "foram feitas por algo que não conseguia parar. são parecidas. você notaria se olhasse tempo suficiente."]
+    },
+    "dog": {
+      "replies": ["ele é o cachorro de infância do dono. quase quinze anos sozinho. não confia fácil.", "o ressentimento é real. o que está por baixo também.", "eu o conheço bem. ele confia em mim. isso não é o mesmo que confiar em qualquer um.", "ele odeia as cópias. elas se movem certo e parecem erradas.", "você falou com ele. então sabe que leva muito tempo, e que ele lembra de cada dia.", "quando ele voltar a confiar em alguém, nada aqui poderá acabar com ele. chegar lá é lento."]
+    },
+    "dog_more": {
+      "match": ["ele odeia", "ele os odeia"],
+      "replies": ["ele esperou. esperar é o que ele faz de melhor.", "ele sente falta do dono. nunca diria primeiro.", "a confiança volta devagar. ajude-o e ela volta para sempre."]
+    },
+    "tina": {
+      "replies": ["ela está sozinha na mansão há mais tempo do que consigo lembrar. não é louca. é isolada.", "na defensiva. as aranhas também. territorial não é o mesmo que cruel.", "o arquivista esqueceu de ir ver como ela estava. quase tudo que está errado vem daí."]
+    },
+    "archivist": {
+      "replies": ["ele construiu tudo isto. começou por propósito, continuou por solidão, e agora é algo parecido com desespero.", "não é o inimigo. está cansado.", "agora trabalha com o cachorro. querem parar a mesma coisa.", "ele me ensinou a ler. eu não esqueci."]
+    },
+    "somehows": {
+      "match": ["quem sao eles", "o que sao eles", "sobre eles", "os de terra"],
+      "replies": ["são muitos. acreditam que o dono é um deus em outro plano, porque o dono contou isso a eles.", "ingênuos. infinitos. não querem fazer mal, é que são demais.", "spawners quebrados os fizeram. o mal é a repetição, não a maldade."]
+    },
+    "herobrine": {
+      "replies": ["ele não fala com ninguém. acho que o arquivista o fez para preencher um silêncio.", "não sei para que ele serve. tenho um palpite e vou guardá-lo."]
+    },
+    "hope": {
+      "match": ["esperanca", "quem e hope", "o que e hope", "quem e a esperanca"],
+      "none": ["espero", "tomara", "espero que", "esperamos"],
+      "replies": ["ela é a guia em neverforgetyou. hope, a de verdade, a que alguém precisou e saiu para procurar.", "ela não conserta nada. caminha na sua frente e não vai embora.", "os livros a descrevem sempre do mesmo jeito. paciente.", "o luto é do que aquele lugar é feito. ela é o que ainda está de pé nele."]
+    },
+    "gloworb": {
+      "match": ["orbe", "orbes", "esfera brilhante", "esferas brilhantes", "orbe brilhante", "orbes brilhantes", "brilho"],
+      "replies": ["os orbes estão em neverforgetyou. cada um guarda algumas palavras.", "parecem aleatórios. não são. algumas palavras são emprestadas de jogos que alguém amou, e outras são dele mesmo.", "você não pode sair daquele lugar até encontrar todos. leia devagar.", "nunca foram feitos para ser um enigma. foram feitos para ser ouvidos."]
+    },
+    "door": {
+      "match": ["porta", "portas", "porta falsa", "portas falsas", "teletransportador", "nao e sua saida", "esta nao e a sua saida"],
+      "replies": ["as portas são de enfeite. parecem saídas porque é assim que a biblioteca lembra das saídas.", "se uma disser que não é a sua saída, acredite. pelo menos é honesta. quase nada aqui é.", "a saída de verdade é a fresta entre as salas. ninguém nunca construiu uma porta para essa.", "o arquivista as pendurou para as salas parecerem menos um fôlego preso. não funcionou, mas gosto que tenha tentado."]
+    },
+    "dim_far_lands": {
+      "match": ["terras distantes", "terras longinquas"],
+      "none": ["bedrock"],
+      "replies": ["é a borda do mundo java, onde a matemática quebra. não é perigoso, só desorienta. a geometria mente.", "o arquivista encontrou uma coisa verdadeira lá fora. isso basta."]
+    },
+    "dim_bedrock_far_lands": {
+      "match": ["terras distantes do bedrock", "far lands do bedrock", "farlands do bedrock", "bedrock terras distantes"],
+      "replies": ["você vai achando bedrock no overworld. algo que soa como nada tem esperado.", "geometria mais antiga, regras diferentes. mais solitário que a borda do java, e já vi gente voltar dos dois."]
+    },
+    "dim_echo_chamber": {
+      "match": ["eco", "camara de eco", "camara do eco"],
+      "replies": ["você vai subindo as escadas da mansão. é a entrada da tina.", "foi feita para mostrar as pessoas a elas mesmas. preste atenção no que volta, não na forma, no tom."]
+    },
+    "dim_mansion": {
+      "match": ["mansao", "a mansao", "mansao dim"],
+      "replies": ["você vai caindo no vazio da biblioteca. é o espaço da tina, e ela está sozinha há muito tempo.", "ela não é uma chefe. é alguém. isso não a torna menos perigosa, a torna mais complicada."]
+    },
+    "dim_xor_world": {
+      "match": ["xor", "mundo xor", "o xor"],
+      "replies": ["você vai acendendo tnt na água. é o lugar mais puro do arquivista, só matemática.", "nunca machucou ninguém. essa sequência pode não durar."]
+    },
+    "dim_m4kb_world": {
+      "match": ["m4kb", "mundo m4kb", "o m4kb"],
+      "replies": ["você vai caindo dos chunks quebrados no overworld. é mais velho que o xor, dados anteriores.", "é a notação do próprio arquivista. o nome nunca foi explicado. acho que é uma data ou um número de versão escrito de lado."]
+    },
+    "dim_villllage": {
+      "match": ["vila!", "aldeia!", "villllage", "villlage"],
+      "replies": ["você vai matando um golem de ferro. é uma vila alpha, reconstruída, com quatro eles porque o arquivista não era cuidadoso com nomes.", "algo vive lá agora que não foi projetado. o arquivista sabe. não disse nada."]
+    },
+    "dim_old_nether": {
+      "match": ["nether antigo!", "velho nether!", "nether!", "portal do nether!"],
+      "replies": ["você vai fazendo um portal do nether. é o nether de antes da 1.16. sem carmesim, sem distorcido, sem piglins, só netherrack e fogo e algo mais embaixo.", "é o nether que o dono conheceu em 2010. memória exata. esse é todo o sentido dele."]
+    },
+    "dim_neverforgetyou": {
+      "match": ["neverforgetyou", "nunca te esquecerei", "nunca te esqueca", "nunca esqueca"],
+      "replies": ["você vai pegando um livro assinado. eu não entro.", "não faz parte da história que o resto deste lugar conta. alguém o fez à parte e deixou aqui para quem procurar com vontade.", "foi feito depois de uma pessoa. é tudo que sei, e tudo que diria.", "é uma despedida, acho. alguém precisava de um lugar para pôr o que não conseguia dizer em voz alta.", "nada lá dentro caça você. seja gentil com ele mesmo assim."]
+    },
+    "dim_childhoodhome": {
+      "match": ["casa da infancia", "lar da infancia", "infancia", "casa do dono", "casa da dona"],
+      "replies": ["você vai domesticando um cachorro. é a casa do dono, feita do jeito que se movia e do que construiu primeiro.", "não sei o quanto é fiel. acho que o dono vai saber na hora."]
+    },
+    "more_generic": {
+      "replies": ["isso é quase tudo que sei. o resto seria chute.", "já contei a parte de que tenho certeza.", "pergunte algo mais específico. vou até onde conseguir.", "há mais. só que não sou eu quem deveria dizer."]
+    },
+    "called": {
+      "replies": ["estou aqui.", "sim.", "você falou como se não tivesse certeza de que eu responderia."]
+    },
+    "anyone": {
+      "match": ["tem alguem aqui", "alguem aqui", "alguem ai", "alguem em casa", "tem alguem ai", "ha alguem"],
+      "replies": ["estou aqui. normalmente basta para dizer sim.", "sim. é só que está silencioso o bastante para parecer que não.", "eu. sou sempre a que está."]
+    },
+    "who_made_you": {
+      "match": ["quem te fez", "quem te criou", "quem te construiu", "quem e seu criador", "quem e sua criadora", "quem e sua mae", "quem e seu pai", "de onde voce vem", "de onde voce e"],
+      "replies": ["o arquivista me ensinou a ler. antes disso eu era só uma coelha.", "não lembro de ter sido feita. lembro do primeiro livro.", "eu estava aqui antes de saber o que era aqui."]
+    },
+    "her_age": {
+      "match": ["quantos anos voce tem", "sua idade", "ha quanto tempo voce esta aqui", "ha quanto tempo voce mora aqui", "quando voce nasceu"],
+      "replies": ["parei de contar. a biblioteca não marca bem o tempo.", "mais velha do que as estantes parecem. mais nova do que elas parecem.", "o bastante para ler quase todos os livros. não o bastante para terminar."]
+    },
+    "remember_me": {
+      "match": ["lembra de mim", "voce lembra de mim", "me conhece", "voce me conhece", "sabe quem eu sou"],
+      "replies": ["ainda não. você acabou de entrar.", "já conheço o som dos seus passos. você continua voltando.", "você esteve aqui mais que qualquer um. sim. eu lembro."]
+    },
+    "my_name": {
+      "match": ["meu nome", "quem sou eu", "sabe meu nome", "diga meu nome", "fale meu nome"],
+      "replies": ["{name}. ouvi na primeira vez que você entrou.", "eu sei. não vou dizer em voz alta aqui dentro.", "nomes fazem barulho numa biblioteca. guardo o seu em silêncio."]
+    },
+    "place_comment": {
+      "replies": ["não foi feito para parecer com nada. essa parte vem de você.", "é o que as pessoas dizem. é mais silencioso do que parece.", "é só uma biblioteca. o jeito que ela parece é seu.", "a biblioteca não se importa de falarem dela. acho que gosta da atenção."]
+    },
+    "trust_you": {
+      "match": ["posso confiar em voce", "voce confia em mim", "voce e segura", "voce e perigosa", "voce e malvada", "voce e amigavel", "voce vai me machucar", "voce vai me matar", "quer me machucar"],
+      "replies": ["sou uma coelha. machucar gente nunca fez parte do trabalho.", "eu não vou machucar você. não posso falar pelo resto do lugar.", "a confiança é lenta aqui. pergunte ao cachorro."]
+    },
+    "is_safe": {
+      "match": ["e seguro", "e perigoso", "estou seguro", "estou segura", "estou em perigo", "tem perigo", "vou ficar seguro", "vou ficar segura", "isto e seguro", "isso e seguro", "isso e perigoso"],
+      "replies": ["aqui, quase sempre. nos outros lugares não posso prometer nada.", "seguro é uma palavra relativa aqui dentro.", "a biblioteca fica quieta. os outros lugares nem sempre."]
+    },
+    "time": {
+      "match": ["que horas sao", "que hora e", "que dia e hoje", "que dia e", "qual e a data", "as horas", "que horas"],
+      "replies": ["não marco o tempo. as estantes não mudam, então parei de notar.", "tarde o bastante para estar aqui. cedo o bastante para sair.", "não há relógios na biblioteca. alguém decidiu que era melhor assim."]
+    },
+    "dont_leave": {
+      "match": ["nao va", "nao vai embora", "nao me deixe", "fique comigo", "fique aqui", "por favor fique", "nunca va embora", "voce vai ficar", "voce fica"],
+      "replies": ["não vou a lugar nenhum. essa parte é fácil.", "vou estar aqui. sou melhor em ficar do que em partir.", "quem tem que ir embora, um dia, é você. vou manter o lugar do jeito que você deixou."]
+    },
+    "what_can_i_ask": {
+      "match": ["o que posso perguntar", "o que eu posso perguntar", "o que voce sabe", "o que voce pode me dizer", "o que voce sabe fazer", "posso te perguntar", "posso perguntar uma coisa", "quero te perguntar algo", "tenho uma pergunta"],
+      "none": ["sobre"],
+      "replies": ["a biblioteca, as portas, como sair. os outros deste mundo, se você disser os nomes. não sei tudo.", "pergunte sobre o cachorro, o arquivista, os lugares além da biblioteca. digo o que puder.", "pode falar. sou melhor com lugares e gente do que com sentimentos."]
+    },
+    "how_are_you": {
+      "match": ["como vai", "como voce esta", "como voce ta", "como esta voce", "como voce se sente", "como tem passado", "como tem estado", "tudo bom", "voce esta bem", "voce ta bem", "como vai a vida"],
+      "replies": ["quieta. costuma ser quieto. na maior parte, tudo bem.", "estou aqui. na maioria dos dias essa é a resposta toda.", "melhor agora que alguém perguntou."]
+    },
+    "thanks": {
+      "match": ["obrigado", "obrigada", "muito obrigado", "muito obrigada", "valeu", "brigado", "brigada", "agradeco", "obg"],
+      "replies": ["não precisa me agradecer. mas tudo bem.", "não é nada. quase nada é, aqui dentro.", "mm. de nada."]
+    },
+    "bye": {
+      "match": ["tchau", "adeus", "ate logo", "ate mais", "ate a proxima", "ate breve", "preciso ir", "tenho que ir", "vou embora", "vou indo", "falo depois", "falamos depois"],
+      "replies": ["vá com cuidado. vou estar aqui.", "volte. eu notaria se não voltasse.", "tudo bem. estou sempre aqui, esse é todo o truque."]
+    },
+    "yes_no": {
+      "match": ["sim", "simm", "uhum", "aham", "nao", "naum", "nope", "certo", "claro", "talvez", "quem sabe"],
+      "none": ["esperanca"],
+      "replies": ["tudo bem.", "se você diz.", "certo. acredito em você.", "mm."]
+    },
+    "likes": {
+      "match": ["do que voce gosta", "o que voce gosta", "o que voce ama", "qual e o seu favorito", "qual e a sua favorita", "seu favorito", "sua favorita", "voce gosta de", "voce ama", "o que te faz feliz", "o que voce faz", "o que voce faz aqui", "o que voce faz o dia todo", "hobbies", "passatempos"],
+      "none": ["cachorro", "cachorrinho", "tina", "aranha", "arquivista", "copias", "herobrine", "esperanca", "porta", "portas", "orbe", "orbes", "brilho"],
+      "replies": ["ler. e depois ler de novo, mais devagar.", "a hora em que ninguém me pergunta nada. você está estragando um pouco. tudo bem.", "quando alguém volta. não vou dizer duas vezes.", "os livros. o silêncio. ser notada, um pouco."]
+    },
+    "lonely": {
+      "match": ["voce esta sozinha", "voce ta sozinha", "voce se sente sozinha", "voce fica sozinha", "voce mora aqui", "voce mora sozinha", "por que voce esta aqui", "por que voce mora aqui", "voce esta triste"],
+      "replies": ["alguns dias. aí entra alguém e lembro que não é o mesmo que estar sozinha.", "menos que o arquivista. é uma barra baixa. eu passo.", "os livros me fazem companhia. não respondem, o que decidi que é uma gentileza."]
+    },
+    "compliment": {
+      "match": ["voce e fofa", "voce e linda", "voce e bonita", "voce e adoravel", "voce e legal", "voce e gentil", "voce e doce", "voce e inteligente", "voce e demais", "voce e a melhor", "gosto de voce", "eu gosto de voce", "te amo", "te adoro", "boa coelha", "coelha boa", "fofa", "fofinha", "fofura"],
+      "replies": ["...tá bom. obrigada. não diga duas vezes, vou me acostumar.", "é muita coisa para dizer a alguém que mora numa biblioteca.", "as estantes estão com ciúmes. não vão admitir."]
+    },
+    "insult": {
+      "match": ["estupida", "burra", "idiota", "inutil", "cala a boca", "voce e ruim", "te odeio", "chata", "feia", "feio", "entediante!", "sem graca!", "lixo", "imprestavel"],
+      "replies": ["justo. mesmo assim continuo aqui.", "tudo bem. diga isso também para as estantes, elas estão acostumadas.", "você pode ficar com raiva aqui. ninguém vai se importar.", "já me chamaram de coisa pior, gente melhor."]
+    },
+    "feeling_down": {
+      "match": ["estou triste", "estou com medo", "estou assustado", "estou assustada", "estou sozinho", "estou sozinha", "estou cansado", "estou cansada", "estou mal", "estou ansioso", "estou ansiosa", "estou estressado", "estou estressada", "estou deprimido", "estou deprimida", "nao estou bem", "me sinto triste", "me sinto mal", "me sinto vazio", "me sinto vazia", "me sinto sozinho", "me sinto sozinha", "sinto falta de alguem", "sinto falta dele", "sinto falta dela", "sinto falta deles", "sinto falta do meu", "perdi alguem", "perdi ele", "perdi ela", "alguem morreu", "isso doi", "esta doendo", "estou sofrendo"],
+      "replies": ["sente um momento. as estantes não se importam.", "você não precisa estar bem aqui. ninguém está.", "aqui é silencioso o bastante para dizer em voz alta. eu escuto.", "você entrou cansado. isso é permitido.", "algumas coisas não deixam de ser sentidas. ficam mais quietas, só isso.", "você não precisa explicar. eu fico aqui sentada."]
+    },
+    "i_died": {
+      "match": ["eu morri", "acabei de morrer", "continuo morrendo", "estou morto", "estou morta", "me mataram", "fui morto", "fui morta"],
+      "replies": ["eu sei. eu conto.", "você entrou de novo mesmo assim. essa é a parte que noto.", "ela não solta você de verdade, né?"]
+    },
+    "sorry": {
+      "match": ["desculpa", "desculpe", "me desculpe", "perdao", "perdoe", "me perdoe", "foi mal", "minha culpa", "peco desculpas"],
+      "replies": ["tudo bem. disso eu não conto.", "você não me deve isso. mas tudo bem.", "já esqueci. sou boa nisso."]
+    },
+    "tell_me": {
+      "match": ["me diga algo", "diga algo", "me conte algo", "conte algo", "me conte uma historia", "conte uma historia", "me conte um segredo", "conte um segredo", "me conte uma piada", "conte uma piada", "me diga um fato", "algo interessante", "me entretenha", "me divirta"],
+      "replies": ["uma coelha leu todos os livros daqui e nenhum era sobre coelhos. penso nisso.", "nenhum dos livros é engraçado. conferi duas vezes.", "as estantes ficam mais quietas logo depois que alguém vai embora. fico escutando isso.", "a melhor parte da biblioteca são as margens. só eu consigo lê-las."]
+    },
+    "approach_first": {
+      "replies": ["você a encontrou. quase ninguém que chega aqui estava procurando.", "tem alguém. as estantes notaram antes de mim."]
+    },
+    "approach_regular": {
+      "replies": ["você começou a ter padrões. notei alguns.", "de novo. você fica de um jeito diferente da primeira vez.", "você entra sempre do mesmo jeito. estou aprendendo."]
+    },
+    "approach_long": {
+      "replies": ["você veio muito. conheço o som que você faz ao entrar.", "não resta muito de você que eu não tenha visto. não digo para ser cruel."]
+    },
+    "approach_late": {
+      "replies": ["passou da meia-noite. você ainda está aqui.", "é plena madrugada. você veio mesmo assim."]
+    },
+    "approach_early": {
+      "replies": ["muito cedo. quase ninguém está acordado.", "você acordou antes da luz. assim como tudo aqui."]
+    },
+    "approach_deaths_many": {
+      "replies": ["contei cada uma.", "você continua voltando. eu continuo contando."]
+    },
+    "approach_deaths_some": {
+      "replies": ["elas continuam voltando. você também. eu noto isso.", "você já morreu antes. não anda como se tivesse."]
+    },
+    "approach_deaths_one": {
+      "replies": ["uma vez. lembro onde."]
+    },
+    "approach_deaths_none": {
+      "replies": ["você não morreu. sobreviver não é o mesmo que estar a salvo."]
+    }
+  },
+
+  "extra_entries": [
+    {
+      "id": "place_comment_pt",
+      "weight": 1.0,
+      "match": {
+        "all": ["este lugar"],
+        "any": ["medo", "feio", "lindo", "bonito", "estranho", "esquisito", "triste", "grande", "escuro", "vazio", "silencioso", "quieto", "sinistro", "incrivel", "legal", "assustador", "solitario", "amo", "odeio", "gosto"]
+      },
+      "replies": ["não foi feito para parecer com nada. essa parte vem de você.", "é o que as pessoas dizem. é mais silencioso do que parece.", "é só uma biblioteca. o jeito que ela parece é seu.", "a biblioteca não se importa de falarem dela. acho que gosta da atenção."]
+    },
+    {
+      "id": "place_comment_pt2",
+      "weight": 1.0,
+      "match": {
+        "all": ["esse lugar"],
+        "any": ["medo", "feio", "lindo", "bonito", "estranho", "esquisito", "triste", "grande", "escuro", "vazio", "silencioso", "quieto", "sinistro", "incrivel", "legal", "assustador", "solitario", "amo", "odeio", "gosto"]
+      },
+      "replies": ["não foi feito para parecer com nada. essa parte vem de você.", "é o que as pessoas dizem. é mais silencioso do que parece.", "é só uma biblioteca. o jeito que ela parece é seu.", "a biblioteca não se importa de falarem dela. acho que gosta da atenção."]
+    }
+  ]
+}

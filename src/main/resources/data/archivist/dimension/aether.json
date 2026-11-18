@@ -1,0 +1,11 @@
+{
+  "type": "archivist:aether",
+  "generator": {
+    "type": "archivist:realm",
+    "kind": "aether",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "archivist:aether_islands"
+    }
+  }
+}

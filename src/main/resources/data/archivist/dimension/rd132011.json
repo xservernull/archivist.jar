@@ -1,0 +1,11 @@
+{
+  "type": "archivist:rd132011",
+  "generator": {
+    "type": "archivist:realm",
+    "kind": "rd132011",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "archivist:rd132011"
+    }
+  }
+}

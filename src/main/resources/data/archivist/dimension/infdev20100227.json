@@ -1,0 +1,11 @@
+{
+  "type": "archivist:infdev20100227",
+  "generator": {
+    "type": "archivist:realm",
+    "kind": "infdev20100227",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "archivist:infdev20100227"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.xservernull.archivist.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "client.BloodRainMixin",
+    "client.ClientLanguageMixin",
+    "client.FallbackResourceManagerMixin",
+    "client.MandangaSoundMixin",
+    "client.OldSkyMixin",
+    "client.QuietPlaceParticleMixin",
+    "client.QuietPlaceSoundMixin",
+    "client.QuietPlaceWindMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "vertex": "archivist:ao",
+  "fragment": "archivist:ao",
+  "samplers": [
+    { "name": "DepthSampler" }
+  ],
+  "uniforms": [
+    { "name": "InverseProjMat", "type": "matrix4x4", "count": 16, "values": [1.0,0.0,0.0,0.0, 0.0,1.0,0.0,0.0, 0.0,0.0,1.0,0.0, 0.0,0.0,0.0,1.0] },
+    { "name": "Ao", "type": "float", "count": 3, "values": [0.0, 1.0, 48.0] }
+  ]
+}

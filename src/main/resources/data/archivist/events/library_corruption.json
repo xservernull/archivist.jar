@@ -1,0 +1,241 @@
+{
+ "_comment": "Library corruption dialogue (old LibraryCorruptionDialogue). steps run in order: {lines:[{s,t,give?}]} or {ask:[buttons], replies:[[lines] per button]}. s = speaker (empty = narrator), give = detector_map. Every t and ask text is 'archivist.key|english' (key in archivist_lang/<code>.json, English = fallback and timing). Speaker names stay TOAST/DOG.",
+ "start_delay": 100,
+ "steps": [
+  {
+   "lines": [
+    {
+     "s": "TOAST",
+     "t": "archivist.corr.0.0|Oh, look. They're finally awake."
+    },
+    {
+     "s": "DOG",
+     "t": "archivist.corr.0.1|Hm. I see."
+    }
+   ]
+  },
+  {
+   "ask": [
+    "archivist.corr.1.ask0|> What is this?",
+    "archivist.corr.1.ask1|> What happened?",
+    "archivist.corr.1.ask2|> Why am I here?"
+   ],
+   "replies": [
+    [
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r0.0|This is what's left of your world now."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r0.1|All dimensions have been corrupted."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r0.2|Safetyprotocol's making, or tenature."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r0.3|However you wanna call him."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r0.4|Guess he couldn't stand you trying to take his place."
+     }
+    ],
+    [
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r1.0|When you attempted to erase the Tenature…,"
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r1.1|or safetyprotocol, his actual name,"
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r1.2|the Tenature took notice and corrupted all dimensions."
+     }
+    ],
+    [
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r2.0|Because you failed to do your duty."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r2.1|What else did you expect?"
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r2.2|The Tenature… or safetyprotocol,"
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r2.3|however you wanna call him, wasn't deleted"
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r2.4|and now he's trying to erase the Archivist's dimensions too."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r2.5|Your world, or at least wherever you were taking residence"
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.1.r2.6|is now corrupted and probably gone in no time."
+     }
+    ]
+   ]
+  },
+  {
+   "lines": [
+    {
+     "s": "TOAST",
+     "t": "archivist.corr.2.0|Listen. I didn't want to do this. Getting involved in your mess should be the last of my problems."
+    },
+    {
+     "s": "TOAST",
+     "t": "archivist.corr.2.1|Since I am the only one who can read in this place, I know a thing or two about backup plans."
+    }
+   ]
+  },
+  {
+   "ask": [
+    "archivist.corr.3.ask0|> Backup plans…?",
+    "archivist.corr.3.ask1|> I'm still confused.",
+    "archivist.corr.3.ask2|> You know I can read too, right?"
+   ],
+   "replies": [
+    [
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.3.r0.0|Yes. I have a plan."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.3.r0.1|A plan to stop this fake entity that keeps trying to pretend to be you."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.3.r0.2|Its facade has been falling apart for years,"
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.3.r0.3|so we're essentially here to expose it."
+     }
+    ],
+    [
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.3.r1.0|Listen."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.3.r1.1|We can actually erase the Tenature."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.3.r1.2|That's what I am trying to say here."
+     }
+    ],
+    [
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.3.r2.0|Oh, shut up. I really don't care."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.3.r2.1|I already don't want to do this with you."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.3.r2.2|You're gonna be a hassle, huh?"
+     }
+    ]
+   ]
+  },
+  {
+   "lines": [
+    {
+     "s": "DOG",
+     "t": "archivist.corr.4.0|We need you to backtrack a little and get to the source."
+    },
+    {
+     "s": "DOG",
+     "t": "archivist.corr.4.1|Remember the_end? Probably heard of it."
+    },
+    {
+     "s": "DOG",
+     "t": "archivist.corr.4.2|Archivist has been hiding there."
+    },
+    {
+     "s": "DOG",
+     "t": "archivist.corr.4.3|We need her to get Tenature deleted once and for all."
+    },
+    {
+     "s": "DOG",
+     "t": "archivist.corr.4.4|She's the only one that has access above him."
+    },
+    {
+     "s": "TOAST",
+     "t": "archivist.corr.4.5|And…"
+    },
+    {
+     "s": "TOAST",
+     "t": "archivist.corr.4.6|Here, you'll need this.",
+     "give": "detector_map"
+    }
+   ]
+  },
+  {
+   "ask": [
+    "archivist.corr.5.ask0|> What does it do?",
+    "archivist.corr.5.ask1|> Are you sure about this?"
+   ],
+   "replies": [
+    [
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.5.r0.0|Supposedly this will help you find the end portal."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.5.r0.1|I have no idea."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.5.r0.2|Don't lose it, or else it'll be more difficult getting around."
+     }
+    ],
+    [
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.5.r1.0|Yes."
+     },
+     {
+      "s": "TOAST",
+      "t": "archivist.corr.5.r1.1|Unfortunately, She's waiting for no one but you."
+     }
+    ]
+   ]
+  },
+  {
+   "lines": [
+    {
+     "s": "TOAST",
+     "t": "archivist.corr.6.0|Alright, well what are you waiting for? The world needs you."
+    },
+    {
+     "s": "TOAST",
+     "t": "archivist.corr.6.1|Find the Archivist. Or else everything will be deleted."
+    },
+    {
+     "s": "",
+     "t": "archivist.corr.6.2|Objective: beat the Ender Dragon. Find the end portal with the detector map."
+    }
+   ]
+  }
+ ]
+}

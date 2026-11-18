@@ -1,0 +1,53 @@
+{
+  "_comment": "Which quick events may start where (docs/EVENTS.md, Framework). Every interval_seconds (random in the range, per player) the game rolls once for a player with no event running: it picks among the entries of their dimension that are off cooldown, by weight, then starts the pick with probability chance. Only 'event' is required (weight 1, cooldown_seconds 0, chance 1). Known event ids: see `/archivist event list`. Only dimensions listed under \"dimensions\" get events (library: greyscale_pulse, at most once per 5 minutes). Example: \"archivist:library\": [ { \"event\": \"greyscale_pulse\", \"weight\": 1, \"cooldown_seconds\": 300, \"chance\": 0.5 } ]",
+  "interval_seconds": [30, 60],
+  "dimensions": {
+    "archivist:library": [
+      { "event": "greyscale_pulse", "weight": 1, "cooldown_seconds": 300, "chance": 1.0 },
+      { "event": "missing_player", "weight": 1, "cooldown_seconds": 600, "chance": 0.15 }
+    ],
+    "archivist:aether": [
+      { "event": "statue_walk", "weight": 1, "cooldown_seconds": 150, "chance": 0.5 }
+    ],
+    "minecraft:overworld": [
+      { "event": "herobrine_stalk", "weight": 1, "cooldown_seconds": 900, "chance": 0.1125 },
+      { "event": "glitch_patch", "weight": 1, "cooldown_seconds": 300, "chance": 0.021 },
+      { "event": "missing_player", "weight": 1, "cooldown_seconds": 600, "chance": 0.225 }
+    ],
+    "archivist:villllage": [
+      { "event": "missing_player", "weight": 1, "cooldown_seconds": 600, "chance": 0.075 }
+    ],
+    "archivist:m4kb_world": [
+      { "event": "m4kb_lag_spike",  "weight": 3, "cooldown_seconds": 60,  "chance": 1.0 },
+      { "event": "m4kb_tiny",       "weight": 3, "cooldown_seconds": 90,  "chance": 1.0 },
+      { "event": "m4kb_pixel_hunt", "weight": 4, "cooldown_seconds": 120, "chance": 1.0 },
+      { "event": "m4kb_jump_quota", "weight": 3, "cooldown_seconds": 90,  "chance": 1.0 },
+      { "event": "m4kb_low_poly",   "weight": 2, "cooldown_seconds": 120, "chance": 1.0 },
+      { "event": "m4kb_path", "weight": 3, "cooldown_seconds": 120, "chance": 1.0 },
+      { "event": "m4kb_towers", "weight": 3, "cooldown_seconds": 120, "chance": 1.0 },
+      { "event": "xor_mirror", "weight": 2, "cooldown_seconds": 150, "chance": 1.0 },
+      { "event": "xor_flip", "weight": 2, "cooldown_seconds": 90, "chance": 1.0 },
+      { "event": "xor_bit_hunt", "weight": 3, "cooldown_seconds": 150, "chance": 1.0 },
+      { "event": "xor_zero_call", "weight": 2, "cooldown_seconds": 120, "chance": 1.0 }
+    ],
+    "archivist:xor_world": [
+      { "event": "xor_mirror",    "weight": 3, "cooldown_seconds": 120, "chance": 1.0 },
+      { "event": "xor_flip",      "weight": 3, "cooldown_seconds": 60,  "chance": 1.0 },
+      { "event": "xor_bit_hunt",  "weight": 4, "cooldown_seconds": 120, "chance": 1.0 },
+      { "event": "xor_bit_math",  "weight": 3, "cooldown_seconds": 90,  "chance": 1.0 },
+      { "event": "xor_zero_call", "weight": 3, "cooldown_seconds": 90,  "chance": 1.0 },
+      { "event": "xor_path", "weight": 3, "cooldown_seconds": 120, "chance": 1.0 },
+      { "event": "xor_towers", "weight": 3, "cooldown_seconds": 120, "chance": 1.0 },
+      { "event": "m4kb_lag_spike", "weight": 2, "cooldown_seconds": 90, "chance": 1.0 },
+      { "event": "m4kb_tiny", "weight": 2, "cooldown_seconds": 120, "chance": 1.0 },
+      { "event": "m4kb_pixel_hunt", "weight": 3, "cooldown_seconds": 150, "chance": 1.0 },
+      { "event": "m4kb_jump_quota", "weight": 2, "cooldown_seconds": 120, "chance": 1.0 },
+      { "event": "m4kb_low_poly", "weight": 2, "cooldown_seconds": 150, "chance": 1.0 }
+    ],
+    "archivist:old_nether": [
+      { "event": "old_nether_reactor_call", "weight": 4, "cooldown_seconds": 150, "chance": 1.0 },
+      { "event": "old_nether_keep_moving",  "weight": 3, "cooldown_seconds": 120, "chance": 1.0 },
+      { "event": "old_nether_piglin_toll",  "weight": 3, "cooldown_seconds": 150, "chance": 1.0 }
+    ]
+  }
+}

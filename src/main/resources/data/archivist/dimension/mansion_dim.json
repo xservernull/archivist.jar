@@ -1,0 +1,11 @@
+{
+  "type": "archivist:mansion_dim",
+  "generator": {
+    "type": "archivist:realm",
+    "kind": "mansion_dim",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraft:plains"
+    }
+  }
+}

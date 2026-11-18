@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "archivist:block/xor_top_4k1",
+    "side": "archivist:block/xor_side_4k1"
+  }
+}

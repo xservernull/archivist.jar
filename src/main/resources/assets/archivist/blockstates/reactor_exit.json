@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "archivist:block/reactor_exit"
+    }
+  }
+}

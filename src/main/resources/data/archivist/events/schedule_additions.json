@@ -1,0 +1,12 @@
+{
+  "dimensions": {
+    "archivist:m4kb_world": [
+      { "event": "m4kb_lag_spike", "weight": 3, "cooldown_seconds": 240, "chance": 0.5 },
+      { "event": "m4kb_tiny", "weight": 2, "cooldown_seconds": 420, "chance": 0.4 }
+    ],
+    "archivist:xor_world": [
+      { "event": "xor_mirror", "weight": 2, "cooldown_seconds": 360, "chance": 0.4 },
+      { "event": "xor_flip", "weight": 3, "cooldown_seconds": 240, "chance": 0.5 }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "archivist:block/xor_block" }
+  }
+}

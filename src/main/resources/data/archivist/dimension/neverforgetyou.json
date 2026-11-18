@@ -1,0 +1,11 @@
+{
+  "type": "archivist:neverforgetyou",
+  "generator": {
+    "type": "archivist:realm",
+    "kind": "neverforgetyou",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "archivist:neverforgetyou"
+    }
+  }
+}

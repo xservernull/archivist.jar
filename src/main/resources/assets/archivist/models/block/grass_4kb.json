@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "archivist:block/grass_top_4k2",
+    "side": "archivist:block/grass_side_4k2"
+  }
+}

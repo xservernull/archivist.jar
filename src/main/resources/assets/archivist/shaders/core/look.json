@@ -1,0 +1,29 @@
+{
+  "vertex": "archivist:look",
+  "fragment": "archivist:look",
+  "samplers": [
+    { "name": "DiffuseSampler" },
+    { "name": "DepthSampler" },
+    { "name": "BloomSampler" },
+    { "name": "AoSampler" }
+  ],
+  "uniforms": [
+    { "name": "InverseProjMat", "type": "matrix4x4", "count": 16, "values": [1.0,0.0,0.0,0.0, 0.0,1.0,0.0,0.0, 0.0,0.0,1.0,0.0, 0.0,0.0,0.0,1.0] },
+    { "name": "GameTime", "type": "float", "count": 1, "values": [0.0] },
+    { "name": "Darkness", "type": "float", "count": 1, "values": [0.0] },
+    { "name": "Beam", "type": "float", "count": 2, "values": [10.0, 11.0] },
+    { "name": "Reach", "type": "float", "count": 2, "values": [100000.0, 200000.0] },
+    { "name": "Tint", "type": "float", "count": 3, "values": [1.0, 1.0, 1.0] },
+    { "name": "Saturation", "type": "float", "count": 1, "values": [1.0] },
+    { "name": "Contrast", "type": "float", "count": 1, "values": [1.0] },
+    { "name": "HazeColor", "type": "float", "count": 3, "values": [0.0, 0.0, 0.0] },
+    { "name": "Fog", "type": "float", "count": 2, "values": [0.0, 0.0] },
+    { "name": "Vignette", "type": "float", "count": 1, "values": [0.0] },
+    { "name": "Grain", "type": "float", "count": 1, "values": [0.0] },
+    { "name": "Bloom", "type": "float", "count": 1, "values": [0.0] },
+    { "name": "Ao", "type": "float", "count": 3, "values": [0.0, 1.0, 48.0] },
+    { "name": "Flicker", "type": "float", "count": 1, "values": [0.0] },
+    { "name": "Breathe", "type": "float", "count": 1, "values": [0.0] },
+    { "name": "Warp", "type": "float", "count": 1, "values": [0.0] }
+  ]
+}
